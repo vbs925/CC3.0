@@ -1,12 +1,12 @@
-import Navbar from "./components/Navbar";
-import ProductsHero from "./components/ProductsHero";
-import StatsBar from "./components/StatsBar";
-import ProductShowcase from "./components/ProductShowcase";
-import ProductDeepDive from "./components/ProductDeepDive";
-import SecurePlatform from "./components/SecurePlatform";
-import InteractiveDemo from "./components/InteractiveDemo";
-import CtaSection from "./components/CtaSection";
-import fallbackContent from "../content/content.json";
+import Navbar from "../components/Navbar";
+import ProductsHero from "./ProductsHero";
+import StatsBar from "./StatsBar";
+import ProductShowcase from "./ProductShowcase";
+import ProductDeepDive from "./ProductDeepDive";
+import SecurePlatform from "./SecurePlatform";
+import InteractiveDemo from "./InteractiveDemo";
+import CtaSection from "./CtaSection";
+import fallbackContent from "../../content/content.json";
 
 // ── Types ──────────────────────────────────────────────────────────────────
 
@@ -88,6 +88,17 @@ interface InteractiveDemoContent {
     description: string;
     note: string;
     useCases: string[];
+    form: {
+      nameLabel: string;
+      namePlaceholder: string;
+      phoneLabel: string;
+      phonePlaceholder: string;
+      emailLabel: string;
+      emailPlaceholder: string;
+      useCaseLabel: string;
+      agreementText: string;
+      buttonLabel: string;
+    };
   };
   testimonial: {
     quote: string;
