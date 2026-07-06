@@ -1,0 +1,69 @@
+/* ── Stats Bar ── */
+.statsBar {
+  background: #ffffff;
+  border-top: 1px solid #e8e4de;
+  border-bottom: 1px solid #e8e4de;
+  padding: 28px 0;
+}
+
+.inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 64px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Each stat block */
+.statItem {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+/* The big number/value */
+.value {
+  font-family: var(--font-space-grotesk), sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+  color: #2e2e2e;
+  line-height: 1;
+  letter-spacing: -0.01em;
+}
+
+/* The label beneath */
+.label {
+  font-family: var(--font-inter), sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  color: #888888;
+  letter-spacing: 0.01em;
+}
+
+/* Dividers between stats */
+.statItem:not(:last-child) {
+  padding-right: 48px;
+  border-right: 1px solid #e8e4de;
+  margin-right: 48px;
+}
+
+/* ── Responsive ── */
+@media (max-width: 768px) {
+  .inner {
+    padding: 0 24px;
+    flex-wrap: wrap;
+    gap: 24px;
+    justify-content: flex-start;
+  }
+
+  .statItem:not(:last-child) {
+    padding-right: 0;
+    border-right: none;
+    margin-right: 0;
+  }
+
+  .value {
+    font-size: 22px;
+  }
+}

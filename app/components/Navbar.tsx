@@ -6,8 +6,8 @@ const navLinks = [
   { label: "Services", href: "#" },
   { label: "Expertise", href: "#" },
   { label: "Products", href: "#", active: true },
-  { label: "Works", href: "#", underline: true },
-  { label: "About", href: "#", underline: true },
+  { label: "Works", href: "#" },
+  { label: "About", href: "#" },
   { label: "Blogs", href: "#" },
 ];
 
@@ -17,7 +17,7 @@ export default function Navbar() {
       <nav className={styles.nav}>
         {/* Logo */}
         <a href="#" className={styles.logo} id="logo-link">
-          <img src="/assets/images/logo.png" alt="CortexCraft.AI Logo" height="32" style={{ objectFit: 'contain' }} />
+          <img src="/assets/images/logo.png" alt="CortexCraft.AI Logo" height="42" style={{ objectFit: 'contain' }} />
         </a>
 
         {/* Nav Links */}
@@ -26,7 +26,7 @@ export default function Navbar() {
             <li key={link.label}>
               <a
                 href={link.href}
-                className={`${styles.navLink} ${link.active ? styles.navLinkActive : ""} ${link.underline ? styles.navLinkUnderline : ""}`}
+                className={`${styles.navLink} ${link.active ? styles.navLinkActive : ""}`}
                 id={`nav-${link.label.toLowerCase()}`}
               >
                 {link.label}

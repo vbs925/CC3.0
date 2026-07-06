@@ -1,20 +1,20 @@
 /* ── Hero Section ── */
 .hero {
   background: #f0ece4;
-  min-height: 68vh;
+  height: 720px;
+  padding: 80px 0; /* Extra padding top and bottom */
   display: flex;
-  align-items: center;
-  padding: 60px 0;
-  overflow: visible; /* Let neural network bleed beyond right edge */
+  align-items: stretch;
+  overflow: hidden; /* clips bottom glow */
 }
 
 /* ── Two-column container ── */
 .container {
   width: 100%;
   display: grid;
-  grid-template-columns: 480px 1fr; /* Fixed left column, right fills rest */
-  align-items: center;
-  padding-left: 64px; /* Left content pushed from edge, matching Figma */
+  grid-template-columns: 480px 1fr;
+  align-items: stretch;
+  padding-left: 64px;
 }
 
 /* ── Left Content ── */
@@ -22,6 +22,8 @@
   display: flex;
   flex-direction: column;
   gap: 18px;
+  justify-content: center; /* Vertically center text in the column */
+  padding: 60px 0;
 }
 
 .label {
@@ -101,36 +103,33 @@
 }
 
 /* ── Right: Graph Panel ── */
+/* Stretches full height of hero, clips bottom overflow */
 .graphWrapper {
   position: relative;
-  height: 380px;
-  overflow: visible; /* Neural net bleeds past right viewport edge */
+  overflow: hidden; /* Clip gold glow at bottom */
 }
 
-/* Neural network illustration:
-   - Nodes appear top-right & bottom-right of the card
-   - Left portion hidden behind card, right nodes bleed off screen */
+/* Neural network — anchored top-right corner, smaller size */
 .graphImage {
   position: absolute;
-  top: -60px;
-  left: 220px;     /* Further right so left nodes are behind the card */
-  width: 720px;
+  top: -27px;
+  right: 0;      /* Comes from the right corner of the page */
+  width: 67%;
   height: auto;
   object-fit: contain;
   z-index: 1;
 }
 
-/* White card — sits cleanly in the right column, clear of the text */
+/* White card — positioned to match Figma, neural nodes visible around it */
 .graphCard {
   position: absolute;
-  left: 40px;       /* 40px buffer from left of right column = clear of text */
-  top: 50%;
-  transform: translateY(-50%);
-  width: 380px;
-  height: 290px;
+  left: 19%;
+  top: 23%;
+  width: 69%;    /* Wider to match landscape card in Figma */
+  height: 58%;   /* Tall enough to cover glow, not too tall */
   background: #ffffff;
-  border-radius: 18px;
-  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.05);
+  border-radius: 20px;
+  box-shadow: 0 2px 32px rgba(0, 0, 0, 0.07);
   z-index: 2;
 }
 
@@ -144,6 +143,10 @@
   .heading {
     font-size: 42px;
   }
+
+  .hero {
+    height: 480px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -151,19 +154,25 @@
     grid-template-columns: 1fr;
     padding: 0 24px;
     gap: 40px;
+    align-items: start;
+  }
+
+  .content {
+    padding: 40px 0 0;
   }
 
   .graphWrapper {
-    height: 300px;
+    height: 320px;
   }
 
   .graphCard {
-    width: 260px;
-    height: 200px;
+    width: 65%;
+    height: 55%;
   }
 
   .hero {
-    padding: 40px 0 60px;
+    height: auto;
     min-height: unset;
+    overflow: hidden;
   }
 }

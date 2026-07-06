@@ -10,12 +10,12 @@
   --bg: #f0ece4;
   --text-dark: #111111;
   --text-muted: #444444;
-  --accent: #f5a623;
-  --accent-hover: #e09510;
+  --accent: #F8AB05;
+  --accent-hover: #dba004; /* Slightly darker shade for hover */
   --white: #ffffff;
   --border: #d9d4ca;
   --nav-bg: #ffffff;
-  --label-color: #f5a623;
+  --label-color: #F8AB05;
 }
 
 html,
