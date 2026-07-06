@@ -1,0 +1,120 @@
+.section {
+  padding: 100px 0;
+  background: #1C1A3A;
+  color: #ffffff;
+}
+
+.container {
+  max-width: 1380px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+/* ── Top Header ── */
+.label {
+  font-family: var(--font-jetbrains-mono), monospace;
+  font-size: 12px;
+  font-weight: 500;
+  color: #ffffff;
+  margin-bottom: 24px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.heading {
+  font-family: var(--font-space-grotesk), sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  color: #ffffff;
+  line-height: 1.2;
+  margin-bottom: 24px;
+  max-width: 525px;
+  letter-spacing: -0.01em;
+}
+
+.description {
+  font-family: var(--font-inter), sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  color: #ffffff;
+  line-height: 1.6;
+  margin-bottom: 60px;
+  max-width: 525px;
+}
+
+/* ── Features Section ── */
+.featuresSection {
+  margin-bottom: 40px;
+}
+
+.divider {
+  border: none;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  margin: 0;
+}
+
+.featuresGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 32px;
+  padding: 40px 0;
+}
+
+.featureItem {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.featureTitle {
+  font-family: var(--font-inter), sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: #F8AB05;
+}
+
+.featureDescription {
+  font-family: var(--font-inter), sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #ffffff;
+  line-height: 1.6;
+  max-width: 280px;
+}
+
+/* ── Tags / Pills ── */
+.tagsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  align-items: center;
+}
+
+.tagPill {
+  font-family: var(--font-jetbrains-mono), monospace;
+  font-size: 11px;
+  font-weight: 500;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 6px 20px;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 50px;
+  background: transparent;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .featuresGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .featuresGrid {
+    grid-template-columns: 1fr;
+  }
+  .heading {
+    font-size: 32px;
+  }
+}

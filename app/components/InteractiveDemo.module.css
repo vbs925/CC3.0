@@ -1,0 +1,352 @@
+.section {
+  padding: 40px 0;
+  background: var(--bg);
+}
+
+.container {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+/* ── Demo Block ── */
+.demoBlock {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  margin-bottom: 40px;
+}
+
+.demoText {
+  flex: 1;
+  max-width: 500px;
+  padding-top: 40px;
+}
+
+.label {
+  font-family: var(--font-jetbrains-mono), monospace;
+  font-size: 11px;
+  font-weight: 600;
+  color: #4338CA;
+  margin-bottom: 24px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.heading {
+  font-family: var(--font-space-grotesk), sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  color: #111111;
+  line-height: 1.1;
+  margin-bottom: 16px;
+  letter-spacing: -0.02em;
+}
+
+.description {
+  font-family: var(--font-inter), sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  color: #444444;
+  line-height: 1.6;
+  margin-bottom: 24px;
+}
+
+.note {
+  font-family: var(--font-inter), sans-serif;
+  font-size: 13px;
+  font-style: italic;
+  font-weight: 500;
+  color: #666666;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.dot {
+  width: 6px;
+  height: 6px;
+  background: #F8AB05;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+/* ── Form Card ── */
+.formCard {
+  flex: 1;
+  max-width: 560px;
+  background: #ffffff;
+  border-radius: 24px;
+  padding: 32px;
+  box-shadow: 0 4px 40px rgba(0, 0, 0, 0.04);
+}
+
+.formGroup {
+  margin-bottom: 16px;
+}
+
+.formGroup label {
+  display: block;
+  font-family: var(--font-jetbrains-mono), monospace;
+  font-size: 11px;
+  font-weight: 600;
+  color: #333333;
+  margin-bottom: 8px;
+}
+
+.formGroup input[type="text"],
+.formGroup input[type="email"],
+.phoneInput input {
+  width: 100%;
+  padding: 12px 16px;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  font-family: var(--font-inter), sans-serif;
+  font-size: 14px;
+  color: #111111;
+  transition: border-color 0.2s ease;
+}
+
+.formGroup input:focus,
+.phoneInput input:focus,
+.phoneInput select:focus {
+  outline: none;
+  border-color: #F8AB05;
+}
+
+.formGroup input::placeholder {
+  color: #aaaaaa;
+}
+
+.phoneInput {
+  display: flex;
+  gap: 8px;
+}
+
+.phoneInput select {
+  padding: 12px;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  font-family: var(--font-inter), sans-serif;
+  font-size: 14px;
+  color: #111111;
+  background: #ffffff;
+  cursor: pointer;
+  outline: none;
+}
+
+.pillGroup {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.pill {
+  padding: 6px 12px;
+  border: 1px solid #e0e0e0;
+  border-radius: 50px;
+  background: #ffffff;
+  font-family: var(--font-inter), sans-serif;
+  font-size: 11px;
+  color: #6B7280;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.pill:hover {
+  background: #F8AB05;
+  color: #FEF3DA;
+  border-color: #F8AB05;
+}
+
+.pillActive {
+  background: #F8AB05;
+  color: #FEF3DA;
+  border-color: #F8AB05;
+}
+
+.agreementGroup {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+  margin: 20px 0;
+}
+
+/* Custom Toggle Switch */
+.toggleSwitch {
+  width: 44px;
+  height: 24px;
+  background: #e0e0e0;
+  border-radius: 24px;
+  border: none;
+  position: relative;
+  cursor: pointer;
+  flex-shrink: 0;
+  transition: background 0.3s ease;
+}
+
+.toggleActive {
+  background: #F8AB05;
+}
+
+.toggleKnob {
+  width: 18px;
+  height: 18px;
+  background: #ffffff;
+  border-radius: 50%;
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  transition: transform 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.toggleActive .toggleKnob {
+  transform: translateX(20px);
+}
+
+.agreementText {
+  font-family: var(--font-inter), sans-serif;
+  font-size: 12px;
+  color: #111111;
+  line-height: 1.5;
+  font-weight: 600;
+}
+
+.agreementText a {
+  color: #4338CA;
+  text-decoration: underline;
+}
+
+.submitBtn {
+  width: 100%;
+  padding: 12px;
+  background: #F8AB05;
+  color: #111111;
+  font-family: var(--font-inter), sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.submitBtn:hover {
+  box-shadow: 0 8px 16px rgba(248, 171, 5, 0.4);
+}
+
+/* ── Testimonial Block ── */
+.testimonialCard {
+  background: #ffffff;
+  border: 1.5px solid rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  display: flex;
+  padding: 48px;
+  align-items: center;
+}
+
+.testimonialQuoteArea {
+  flex: 1.2;
+  padding-right: 48px;
+}
+
+.quote {
+  font-family: var(--font-inter), sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  color: #111111;
+  line-height: 1.5;
+  margin-bottom: 40px;
+}
+
+.authorArea {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: 1px solid #4338CA;
+  color: #4338CA;
+  font-family: var(--font-inter), sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(67, 56, 202, 0.05);
+}
+
+.authorName {
+  font-family: var(--font-inter), sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  color: #111111;
+}
+
+.authorRole {
+  font-family: var(--font-inter), sans-serif;
+  font-size: 11px;
+  color: #888888;
+  margin-top: 2px;
+}
+
+.testimonialDivider {
+  width: 1px;
+  height: 140px;
+  background: rgba(248, 171, 5, 0.4); /* F8AB05 with opacity */
+  margin: 0 48px;
+}
+
+.testimonialStatArea {
+  flex: 1;
+}
+
+.statValue {
+  font-family: var(--font-space-grotesk), sans-serif;
+  font-size: 64px;
+  font-weight: 700;
+  color: #c98504; /* slightly darker golden for contrast */
+  line-height: 1;
+  margin-bottom: 12px;
+}
+
+.statLabel {
+  font-family: var(--font-inter), sans-serif;
+  font-size: 13px;
+  color: #333333;
+  line-height: 1.5;
+  max-width: 240px;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .demoBlock {
+    flex-direction: column;
+    gap: 40px;
+  }
+  .formCard {
+    max-width: 100%;
+  }
+  .testimonialCard {
+    flex-direction: column;
+    text-align: center;
+    padding: 32px;
+  }
+  .testimonialQuoteArea {
+    padding-right: 0;
+    margin-bottom: 32px;
+  }
+  .testimonialDivider {
+    width: 100%;
+    height: 1px;
+    margin: 0 0 32px 0;
+  }
+  .authorArea {
+    justify-content: center;
+  }
+}

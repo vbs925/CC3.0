@@ -2,6 +2,10 @@ import Navbar from "./components/Navbar";
 import ProductsHero from "./components/ProductsHero";
 import StatsBar from "./components/StatsBar";
 import ProductShowcase from "./components/ProductShowcase";
+import ProductDeepDive from "./components/ProductDeepDive";
+import SecurePlatform from "./components/SecurePlatform";
+import InteractiveDemo from "./components/InteractiveDemo";
+import CtaSection from "./components/CtaSection";
 import fallbackContent from "../content/content.json";
 
 // ── Types ──────────────────────────────────────────────────────────────────
@@ -54,11 +58,60 @@ interface ShowcaseContent {
   products: Product[];
 }
 
+interface DeepDiveContent {
+  stats: StatItem[];
+  features: {
+    title: string;
+    subtitle: string;
+    image: string | null;
+  }[];
+  performance: {
+    heading: string;
+    description: string;
+    primaryButton: HeroButton;
+    secondaryButton: HeroButton;
+  };
+}
+
+interface PlatformContent {
+  label: string;
+  heading: string;
+  description: string;
+  features: { title: string; description: string }[];
+  tags: string[];
+}
+
+interface InteractiveDemoContent {
+  demo: {
+    label: string;
+    heading: string;
+    description: string;
+    note: string;
+    useCases: string[];
+  };
+  testimonial: {
+    quote: string;
+    author: string;
+    role: string;
+    statValue: string;
+    statLabel: string;
+  };
+}
+
 interface SiteContent {
   navbar: NavbarContent;
   hero: HeroContent;
   stats: StatItem[];
   showcase: ShowcaseContent;
+  deepDive?: DeepDiveContent;
+  platform?: PlatformContent;
+  interactiveDemo?: InteractiveDemoContent;
+  ctaSection?: {
+    heading: string;
+    description: string;
+    buttonLabel: string;
+    buttonUrl: string;
+  };
 }
 
 // ── Content fetcher (SSR, with fallback) ──────────────────────────────────
@@ -66,7 +119,7 @@ interface SiteContent {
 async function getContent(): Promise<SiteContent> {
   try {
     const res = await fetch("http://localhost:8000/api/cms/content/", {
-      next: { revalidate: 60 }, // Re-fetch from Wagtail every 60 seconds
+      next: { revalidate: 0 }, // Disable caching for active development
     });
     if (!res.ok) throw new Error(`API returned ${res.status}`);
     return await res.json();
@@ -91,6 +144,10 @@ export default async function ProductsPage() {
       <ProductsHero hero={content.hero} />
       <StatsBar stats={content.stats} />
       <ProductShowcase showcase={content.showcase} />
+      {content.deepDive && <ProductDeepDive data={content.deepDive} />}
+      {content.platform && <SecurePlatform data={content.platform} />}
+      {content.interactiveDemo && <InteractiveDemo data={content.interactiveDemo} />}
+      {content.ctaSection && <CtaSection data={content.ctaSection} />}
     </main>
   );
 }

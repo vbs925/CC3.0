@@ -5,28 +5,68 @@
     "ctaLabel": "Get in touch",
     "ctaUrl": "#contact",
     "links": [
-      { "label": "Services", "url": "#", "isActive": false },
-      { "label": "Expertise", "url": "#", "isActive": false },
-      { "label": "Products", "url": "#", "isActive": true },
-      { "label": "Works", "url": "#", "isActive": false },
-      { "label": "About", "url": "#", "isActive": false },
-      { "label": "Blogs", "url": "#", "isActive": false }
+      {
+        "label": "Services",
+        "url": "#",
+        "isActive": false
+      },
+      {
+        "label": "Products",
+        "url": "#",
+        "isActive": true
+      },
+      {
+        "label": "Works",
+        "url": "#",
+        "isActive": false
+      },
+      {
+        "label": "About",
+        "url": "#",
+        "isActive": false
+      },
+      {
+        "label": "Blogs",
+        "url": "#",
+        "isActive": false
+      }
     ]
   },
   "hero": {
     "label": "Enterprise Software Products",
     "heading": "Intelligent Products That Transform Operations",
     "description": "From ERP platforms to AI voice agents and CRM systems, our products automate the work behind your business, cut operating cost, and deploy inside your stack in days and not quarters.",
-    "primaryButton": { "label": "View Our Products", "url": "#products" },
-    "secondaryButton": { "label": "Schedule a Demo", "url": "#demo" },
+    "primaryButton": {
+      "label": "View Our Products",
+      "url": "#products"
+    },
+    "secondaryButton": {
+      "label": "Schedule a Demo",
+      "url": "#demo"
+    },
     "heroImage": null
   },
   "stats": [
-    { "value": "2014", "label": "Building Since" },
-    { "value": "40+", "label": "Products Shipped" },
-    { "value": "30+", "label": "Major Clients" },
-    { "value": "ISO 27001", "label": "Certified" },
-    { "value": "98%", "label": "Customer Satisfaction" }
+    {
+      "value": "2014",
+      "label": "Building Since"
+    },
+    {
+      "value": "40+",
+      "label": "Products Shipped"
+    },
+    {
+      "value": "30+",
+      "label": "Major Clients"
+    },
+    {
+      "value": "ISO 27001",
+      "label": "Certified"
+    },
+    {
+      "value": "98%",
+      "label": "Customer Satisfaction"
+    }
   ],
   "showcase": {
     "label": "Our Products",
@@ -37,10 +77,140 @@
         "categoryLabel": "Voice & CX",
         "title": "Cortex Voiz: The AI Phone Assistant",
         "subtitle": "Production-quality AI voice agents for inbound and outbound calls without building telephony infrastructure from scratch.",
-        "description": "Manual phone handling is costly and hard to scale. Create, configure, and manage intelligent voice agents from one dashboard — whether you run a clinic, a bank, or a contact centre.",
-        "demoText": "Watch the 2-min demo — no form needed",
+        "description": "Manual phone handling is costly and hard to scale. Create, configure, and manage intelligent voice agents from one dashboard \u2014 whether you run a clinic, a bank, or a contact centre.",
+        "demoText": "Watch the 2-min demo \u2014 no form needed",
         "videoPlaceholder": null
       }
     ]
+  },
+  "deepDive": {
+    "stats": [
+      {
+        "value": "98.6%",
+        "label": "Call Resolution Without A Human"
+      },
+      {
+        "value": "-40%",
+        "label": "Cost Per Handled Call"
+      },
+      {
+        "value": "3 DAYS",
+        "label": "To First Live Agent"
+      }
+    ],
+    "features": [
+      {
+        "title": "Intelligent Inbound & Outbound Calling",
+        "subtitle": "Automate your sales outreach and customer support.",
+        "image": null
+      },
+      {
+        "title": "Actionable Insights & Summaries",
+        "subtitle": "Every completed phone call automatically generates a full searchable transcript",
+        "image": null
+      },
+      {
+        "title": "Knowledge-Driven Responses (RAG)",
+        "subtitle": "Ground your AI's knowledge in your actual business data.",
+        "image": null
+      },
+      {
+        "title": "Multilingual Capabilities",
+        "subtitle": "Serve a global customer base effortlessly.",
+        "image": null
+      },
+      {
+        "title": "Risk-Free Browser Live Testing",
+        "subtitle": "Perfect your agent's behavior before going live.",
+        "image": null
+      },
+      {
+        "title": "Seamless CRM & API Integration",
+        "subtitle": "A robust REST API allowing seamless integration with your existing external applications and CRMs",
+        "image": null
+      }
+    ],
+    "performance": {
+      "heading": "Built for Scale and Performance",
+      "description": "Cortex Voiz is engineered for ultra-low latency voice interactions. It integrates directly with industry-leading telephony providers like Twilio and Plivo and uses a high-performance Python (FastAPI) orchestration layer to stream real-time audio directly to the Google Gemini Live WebSocket API",
+      "primaryButton": {
+        "label": "Learn More about Cortex Voiz",
+        "url": "#cortex-voiz"
+      },
+      "secondaryButton": {
+        "label": "Schedule a Demo",
+        "url": "#demo"
+      }
+    }
+  },
+  "platform": {
+    "label": "Built for Scale and Performance",
+    "heading": "One Secure Platform Behind Every Product",
+    "description": "Every CortexCraft product runs on the same hardened platform \u2014 low-latency, integration-ready, and audit-friendly from day one, so it drops into your environment instead of fighting it.",
+    "features": [
+      {
+        "title": "Latency",
+        "description": "Sub-second turn-taking on live calls via a streaming WebSocket pipeline."
+      },
+      {
+        "title": "Integrations",
+        "description": "Native connectors and a clean REST API into your CRMs, ERPs, and data stores."
+      },
+      {
+        "title": "Orchestration",
+        "description": "A FastAPI layer streaming audio to real-time speech and reasoning models."
+      },
+      {
+        "title": "Security",
+        "description": "Encrypted in transit and at rest, with role-based access and full call audit logs."
+      }
+    ],
+    "tags": [
+      "ISO 27001",
+      "SOC 2 Type II",
+      "GDPR",
+      "HIPAA-ready",
+      "Rest API",
+      "SSO/SAML"
+    ]
+  },
+  "interactiveDemo": {
+    "demo": {
+      "label": "Test It Yourself",
+      "heading": "Talk To Cortex Voiz & Test Your Own Scenario",
+      "description": "Pick a use case and our AI agent will call you and run it live, then answer anything you want to ask. The fastest way to judge it is to hear it.",
+      "note": "We'll call within ~30 seconds. The call takes about 2 minutes.",
+      "useCases": [
+        "Appointment Booking",
+        "Market Survey",
+        "Information Supply Agent",
+        "Real Estate Agent",
+        "Loan Marketing Agent"
+      ],
+      "form": {
+        "nameLabel": "Name",
+        "namePlaceholder": "Enter your full name",
+        "phoneLabel": "Phone Number",
+        "phonePlaceholder": "11111-11111",
+        "emailLabel": "Work email",
+        "emailPlaceholder": "name@email.com",
+        "useCaseLabel": "What should the agent demo?",
+        "agreementText": "I agree to receive a one-time automated call from CortexCraft for this demo, and to the privacy policy.",
+        "buttonLabel": "Call me now"
+      }
+    },
+    "testimonial": {
+      "quote": "Cortex Voiz answered 30,000 patient calls in the first month and booked 41% of them without a single human picking up.",
+      "author": "Surya",
+      "role": "Head of Operations, SD",
+      "statValue": "41%",
+      "statLabel": "of inbound appointments booked fully autonomously, day one."
+    }
+  },
+  "ctaSection": {
+    "heading": "Ready to see it in your workflow?",
+    "description": "Tell us the operation you want to automate and we'll show you the product that fits \u2014 running on your scenario.",
+    "buttonLabel": "Book a live call",
+    "buttonUrl": "#book"
   }
 }
