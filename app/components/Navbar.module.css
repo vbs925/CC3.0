@@ -1,0 +1,112 @@
+.header {
+  width: 100%;
+  padding: 12px 24px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: transparent;
+}
+
+.nav {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #ffffff;
+  border-radius: 50px;
+  padding: 10px 20px;
+  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.06);
+}
+
+/* ── Logo ── */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+}
+
+.logoIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logoText {
+  display: flex;
+  flex-direction: column;
+  line-height: 1;
+}
+
+.logoBrand {
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  color: #111111;
+}
+
+.logoSub {
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  color: #f5a623;
+}
+
+/* ── Nav Links ── */
+.navLinks {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navLink {
+  font-size: 14px;
+  font-weight: 500;
+  color: #333333;
+  padding: 6px 14px;
+  border-radius: 20px;
+  transition: color 0.2s ease, background 0.2s ease;
+  text-decoration: none;
+  position: relative;
+  white-space: nowrap;
+}
+
+.navLink:hover {
+  color: #111111;
+  background: rgba(0, 0, 0, 0.04);
+}
+
+.navLinkActive {
+  font-weight: 700;
+  color: #111111;
+}
+
+/* underline style for "Works" and "About" */
+.navLinkUnderline {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-thickness: 1.5px;
+}
+
+/* ── CTA Button ── */
+.ctaBtn {
+  background: #f5a623;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 10px 20px;
+  border-radius: 50px;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: background 0.2s ease, transform 0.15s ease;
+  letter-spacing: 0.01em;
+}
+
+.ctaBtn:hover {
+  background: #e09510;
+  transform: translateY(-1px);
+}
