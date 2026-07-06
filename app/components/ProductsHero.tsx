@@ -1,33 +1,53 @@
 import styles from "./ProductsHero.module.css";
 
-export default function ProductsHero() {
+interface HeroButton {
+  label: string;
+  url: string;
+}
+
+interface HeroProps {
+  hero: {
+    label: string;
+    heading: string;
+    description: string;
+    primaryButton: HeroButton;
+    secondaryButton: HeroButton;
+    heroImage: string | null;
+  };
+}
+
+export default function ProductsHero({ hero }: HeroProps) {
   return (
     <section className={styles.hero} aria-label="Products Hero Section">
       <div className={styles.container}>
         {/* ── Left: Text Content ── */}
         <div className={styles.content}>
           <p className={styles.label} id="hero-label">
-            Enterprise Software Products
+            {hero.label}
           </p>
 
           <h1 className={styles.heading}>
-            Intelligent Products <br />
-            That Transform <br />
-            Operations
+            {hero.heading}
           </h1>
 
           <p className={styles.description}>
-            From ERP platforms to AI voice agents and CRM systems, our products
-            automate the work behind your business, cut operating cost, and deploy
-            inside your stack in days and not quarters.
+            {hero.description}
           </p>
 
           <div className={styles.actions}>
-            <a href="#products" className={styles.btnPrimary} id="hero-view-products-btn">
-              View Our Products
+            <a
+              href={hero.primaryButton.url}
+              className={styles.btnPrimary}
+              id="hero-view-products-btn"
+            >
+              {hero.primaryButton.label}
             </a>
-            <a href="#demo" className={styles.btnSecondary} id="hero-schedule-demo-btn">
-              Schedule a Demo
+            <a
+              href={hero.secondaryButton.url}
+              className={styles.btnSecondary}
+              id="hero-schedule-demo-btn"
+            >
+              {hero.secondaryButton.label}
             </a>
           </div>
         </div>
@@ -35,10 +55,10 @@ export default function ProductsHero() {
         {/* ── Right: Geometric Node Graph ── */}
         <div className={styles.graphWrapper} aria-hidden="true">
           {/* Neural Network Illustration */}
-          <img 
-            src="/assets/images/Neural Network Illustration.png" 
-            alt="Neural Network Pattern" 
-            className={styles.graphImage} 
+          <img
+            src={hero.heroImage ?? "/assets/images/Neural Network Illustration.png"}
+            alt="Neural Network Pattern"
+            className={styles.graphImage}
           />
 
           {/* White card in front */}

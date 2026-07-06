@@ -1,0 +1,46 @@
+{
+  "_comment": "This is the FALLBACK content only. Edit content in the Wagtail admin at http://localhost:8000/cms/",
+  "navbar": {
+    "logo": null,
+    "ctaLabel": "Get in touch",
+    "ctaUrl": "#contact",
+    "links": [
+      { "label": "Services", "url": "#", "isActive": false },
+      { "label": "Expertise", "url": "#", "isActive": false },
+      { "label": "Products", "url": "#", "isActive": true },
+      { "label": "Works", "url": "#", "isActive": false },
+      { "label": "About", "url": "#", "isActive": false },
+      { "label": "Blogs", "url": "#", "isActive": false }
+    ]
+  },
+  "hero": {
+    "label": "Enterprise Software Products",
+    "heading": "Intelligent Products That Transform Operations",
+    "description": "From ERP platforms to AI voice agents and CRM systems, our products automate the work behind your business, cut operating cost, and deploy inside your stack in days and not quarters.",
+    "primaryButton": { "label": "View Our Products", "url": "#products" },
+    "secondaryButton": { "label": "Schedule a Demo", "url": "#demo" },
+    "heroImage": null
+  },
+  "stats": [
+    { "value": "2014", "label": "Building Since" },
+    { "value": "40+", "label": "Products Shipped" },
+    { "value": "30+", "label": "Major Clients" },
+    { "value": "ISO 27001", "label": "Certified" },
+    { "value": "98%", "label": "Customer Satisfaction" }
+  ],
+  "showcase": {
+    "label": "Our Products",
+    "description": "Seven products, one secure platform. Switch between them to see what each does and how fast it ships.",
+    "products": [
+      {
+        "tabName": "Cortex Voiz",
+        "categoryLabel": "Voice & CX",
+        "title": "Cortex Voiz: The AI Phone Assistant",
+        "subtitle": "Production-quality AI voice agents for inbound and outbound calls without building telephony infrastructure from scratch.",
+        "description": "Manual phone handling is costly and hard to scale. Create, configure, and manage intelligent voice agents from one dashboard — whether you run a clinic, a bank, or a contact centre.",
+        "demoText": "Watch the 2-min demo — no form needed",
+        "videoPlaceholder": null
+      }
+    ]
+  }
+}

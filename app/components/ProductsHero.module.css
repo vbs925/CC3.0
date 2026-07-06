@@ -1,6 +1,6 @@
 /* ── Hero Section ── */
 .hero {
-  background: #f0ece4;
+  background: var(--bg);
   height: 720px;
   padding: 80px 0; /* Extra padding top and bottom */
   display: flex;
@@ -64,7 +64,7 @@
 
 .btnPrimary {
   background: #f5a623;
-  color: #ffffff;
+  color: #111111; /* Changed to black as requested */
   font-family: var(--font-inter), sans-serif;
   font-size: 14px;
   font-weight: 600;
@@ -83,22 +83,22 @@
 
 .btnSecondary {
   background: transparent;
-  color: #111111;
+  color: #4338CA; /* CC Indigo text */
   font-family: var(--font-inter), sans-serif;
   font-size: 14px;
-  font-weight: 500;
+  font-weight: 600;
   padding: 10px 22px;
   border-radius: 50px;
-  border: 1.5px solid #c0b8ae;
+  border: 1.5px solid #4338CA; /* CC Indigo border */
   text-decoration: none;
   letter-spacing: 0.01em;
-  transition: border-color 0.2s ease, background 0.2s ease, transform 0.15s ease;
+  transition: border-color 0.2s ease, background 0.2s ease, color 0.2s ease, transform 0.15s ease;
   white-space: nowrap;
 }
 
 .btnSecondary:hover {
-  border-color: #888;
-  background: rgba(0, 0, 0, 0.04);
+  background: #4338CA;
+  color: #ffffff;
   transform: translateY(-1px);
 }
 

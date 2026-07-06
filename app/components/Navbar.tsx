@@ -2,31 +2,42 @@
 
 import styles from "./Navbar.module.css";
 
-const navLinks = [
-  { label: "Services", href: "#" },
-  { label: "Expertise", href: "#" },
-  { label: "Products", href: "#", active: true },
-  { label: "Works", href: "#" },
-  { label: "About", href: "#" },
-  { label: "Blogs", href: "#" },
-];
+interface NavLink {
+  label: string;
+  url: string;
+  isActive: boolean;
+}
 
-export default function Navbar() {
+interface NavbarProps {
+  navbar: {
+    logo: string | null;
+    ctaLabel: string;
+    ctaUrl: string;
+    links: NavLink[];
+  };
+}
+
+export default function Navbar({ navbar }: NavbarProps) {
   return (
     <header className={styles.header}>
       <nav className={styles.nav}>
         {/* Logo */}
         <a href="#" className={styles.logo} id="logo-link">
-          <img src="/assets/images/logo.png" alt="CortexCraft.AI Logo" height="42" style={{ objectFit: 'contain' }} />
+          <img
+            src={navbar.logo ?? "/assets/images/logo.png"}
+            alt="CortexCraft.AI Logo"
+            height="42"
+            style={{ objectFit: "contain" }}
+          />
         </a>
 
         {/* Nav Links */}
         <ul className={styles.navLinks} role="list">
-          {navLinks.map((link) => (
+          {navbar.links.map((link) => (
             <li key={link.label}>
               <a
-                href={link.href}
-                className={`${styles.navLink} ${link.active ? styles.navLinkActive : ""}`}
+                href={link.url}
+                className={`${styles.navLink} ${link.isActive ? styles.navLinkActive : ""}`}
                 id={`nav-${link.label.toLowerCase()}`}
               >
                 {link.label}
@@ -36,8 +47,8 @@ export default function Navbar() {
         </ul>
 
         {/* CTA */}
-        <a href="#" className={styles.ctaBtn} id="nav-cta-btn">
-          Get in touch
+        <a href={navbar.ctaUrl} className={styles.ctaBtn} id="nav-cta-btn">
+          {navbar.ctaLabel}
         </a>
       </nav>
     </header>
