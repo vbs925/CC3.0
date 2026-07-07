@@ -6,6 +6,7 @@ import ProductDeepDive from "./ProductDeepDive";
 import SecurePlatform from "./SecurePlatform";
 import InteractiveDemo from "./InteractiveDemo";
 import CtaSection from "./CtaSection";
+import Footer from "../components/Footer";
 import fallbackContent from "../../content/content.json";
 
 // ── Types ──────────────────────────────────────────────────────────────────
@@ -159,6 +160,7 @@ export default async function ProductsPage() {
       {content.platform && <SecurePlatform data={content.platform} />}
       {content.interactiveDemo && <InteractiveDemo data={content.interactiveDemo} />}
       {content.ctaSection && <CtaSection data={content.ctaSection} />}
+      <Footer footer={content.footer as any} />
     </main>
   );
 }

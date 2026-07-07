@@ -77,8 +77,8 @@
         "categoryLabel": "Voice & CX",
         "title": "Cortex Voiz: The AI Phone Assistant",
         "subtitle": "Production-quality AI voice agents for inbound and outbound calls without building telephony infrastructure from scratch.",
-        "description": "Manual phone handling is costly and hard to scale. Create, configure, and manage intelligent voice agents from one dashboard \u2014 whether you run a clinic, a bank, or a contact centre.",
-        "demoText": "Watch the 2-min demo \u2014 no form needed",
+        "description": "Manual phone handling is costly and hard to scale. Create, configure, and manage intelligent voice agents from one dashboard — whether you run a clinic, a bank, or a contact centre.",
+        "demoText": "Watch the 2-min demo — no form needed",
         "videoPlaceholder": null
       }
     ]
@@ -134,7 +134,7 @@
       "heading": "Built for Scale and Performance",
       "description": "Cortex Voiz is engineered for ultra-low latency voice interactions. It integrates directly with industry-leading telephony providers like Twilio and Plivo and uses a high-performance Python (FastAPI) orchestration layer to stream real-time audio directly to the Google Gemini Live WebSocket API",
       "primaryButton": {
-        "label": "Learn More about Cortex Voiz",
+        "label": "Learn More",
         "url": "#cortex-voiz"
       },
       "secondaryButton": {
@@ -146,7 +146,7 @@
   "platform": {
     "label": "Built for Scale and Performance",
     "heading": "One Secure Platform Behind Every Product",
-    "description": "Every CortexCraft product runs on the same hardened platform \u2014 low-latency, integration-ready, and audit-friendly from day one, so it drops into your environment instead of fighting it.",
+    "description": "Every CortexCraft product runs on the same hardened platform — low-latency, integration-ready, and audit-friendly from day one, so it drops into your environment instead of fighting it.",
     "features": [
       {
         "title": "Latency",
@@ -209,8 +209,134 @@
   },
   "ctaSection": {
     "heading": "Ready to see it in your workflow?",
-    "description": "Tell us the operation you want to automate and we'll show you the product that fits \u2014 running on your scenario.",
+    "description": "Tell us the operation you want to automate and we'll show you the product that fits — running on your scenario.",
     "buttonLabel": "Book a live call",
     "buttonUrl": "#book"
+  },
+  "footer": {
+    "brandDescription": "AI-First Digital Transformation Company.",
+    "socialLinks": [
+      {
+        "platform": "linkedin",
+        "url": "https://linkedin.com"
+      },
+      {
+        "platform": "instagram",
+        "url": "https://instagram.com"
+      },
+      {
+        "platform": "facebook",
+        "url": "https://facebook.com"
+      },
+      {
+        "platform": "youtube",
+        "url": "https://youtube.com"
+      },
+      {
+        "platform": "x",
+        "url": "https://x.com"
+      }
+    ],
+    "columns": [
+      {
+        "heading": "KEY NAVIGATIONS",
+        "links": [
+          {
+            "label": "Home",
+            "url": "#"
+          },
+          {
+            "label": "Services",
+            "url": "#"
+          },
+          {
+            "label": "Products",
+            "url": "#"
+          },
+          {
+            "label": "Works",
+            "url": "#"
+          },
+          {
+            "label": "About Us",
+            "url": "#"
+          }
+        ]
+      },
+      {
+        "heading": "OUR SERVICES",
+        "links": [
+          {
+            "label": "AI & LLM Solutions",
+            "url": "#"
+          },
+          {
+            "label": "Enterprise IOT Solutions",
+            "url": "#"
+          },
+          {
+            "label": "Product Development and Engineering",
+            "url": "#"
+          },
+          {
+            "label": "Automation & Analytics",
+            "url": "#"
+          },
+          {
+            "label": "Strategic Design and Ideation",
+            "url": "#"
+          },
+          {
+            "label": "Product Oriented Delivery Team",
+            "url": "#"
+          }
+        ]
+      },
+      {
+        "heading": "OUR PRODUCTS",
+        "links": [
+          {
+            "label": "Cortex Voiz",
+            "url": "#"
+          },
+          {
+            "label": "Market Survey Tool",
+            "url": "#"
+          },
+          {
+            "label": "Cortex Desk",
+            "url": "#"
+          },
+          {
+            "label": "ERP in Care Homes",
+            "url": "#"
+          },
+          {
+            "label": "ERP in Retail",
+            "url": "#"
+          },
+          {
+            "label": "Forecasting Tool",
+            "url": "#"
+          }
+        ]
+      }
+    ],
+    "offices": [
+      {
+        "name": "India",
+        "address": "5th floor, 175 & 176, Bannerghatta Rd, Dollars Colony,\nPhase 4, J. P. Nagar, Bengaluru, Karnataka 560076",
+        "email": ""
+      },
+      {
+        "name": "Sweden",
+        "address": "Sankt Paulsgatan 1, 118 46 Stockholm, Sweden",
+        "email": "contactus@cortexcraft.ai"
+      }
+    ],
+    "logo": null,
+    "termsUrl": "#",
+    "privacyUrl": "#",
+    "copyrightText": "© 2026 CortexCraft Innovation Labs"
   }
 }

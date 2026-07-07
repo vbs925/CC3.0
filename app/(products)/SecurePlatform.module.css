@@ -101,6 +101,14 @@
   border: 1px solid rgba(255, 255, 255, 0.4);
   border-radius: 50px;
   background: transparent;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.tagPill:hover {
+  background: #F8AB05;
+  color: #ffffff;
+  border-color: #F8AB05;
 }
 
 /* Responsive */

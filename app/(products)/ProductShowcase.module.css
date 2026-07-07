@@ -41,7 +41,7 @@
 }
 
 .tabBtn {
-  background: transparent;
+  background: #ffffff;
   color: #111111;
   font-family: var(--font-inter), sans-serif;
   font-size: 13px;
@@ -55,7 +55,8 @@
 
 .tabBtn:hover {
   border-color: #111111;
-  background: rgba(0, 0, 0, 0.03);
+  background: #111111;
+  color: #ffffff;
 }
 
 .tabBtnActive {
@@ -134,7 +135,7 @@
   width: 64px;
   height: 64px;
   border-radius: 50%;
-  background: #F8AB05;
+  background: #ffffff;
   border: none;
   display: flex;
   align-items: center;
@@ -145,7 +146,7 @@
 
 .playBtn:hover {
   transform: scale(1.05);
-  background: #dba004;
+  background: #f9f9f9;
 }
 
 .demoText {
