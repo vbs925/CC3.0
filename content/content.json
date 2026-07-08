@@ -990,6 +990,48 @@
           ]
         }
       ]
+    },
+    "useCasesSection": {
+      "label": "Who it is for",
+      "heading": "Different Teams, Same Platform",
+      "items": [
+        {
+          "icon": null,
+          "title": "Healthcare",
+          "description": "Appointment lines ring constantly. Voiz answers, checks availability, books, and confirms instantly."
+        },
+        {
+          "icon": null,
+          "title": "Financial Services",
+          "description": "Support volume spikes unpredictably. AI takes routine calls; humans take the complex ones."
+        },
+        {
+          "icon": null,
+          "title": "Contact Centres",
+          "description": "Use AI for first-pass handling and reserve people for hard cases, cutting handle time."
+        },
+        {
+          "icon": null,
+          "title": "Retail & E-commerce",
+          "description": "Order status and returns handled automatically, with feedback captured on the call."
+        },
+        {
+          "icon": null,
+          "title": "Real Estate",
+          "description": "Outbound follow-up qualifies leads, schedules showings, and answers property questions 24/7."
+        },
+        {
+          "icon": null,
+          "title": "Education",
+          "description": "Admissions lines answered at scale \u2014 questions handled, materials sent, tours booked."
+        }
+      ],
+      "cta": {
+        "heading": "What to use Cortex Voiz in a different sector?",
+        "description": "Contact us to get a personalised demo of Cortex Voiz for your specific domain.",
+        "buttonLabel": "Schedule a Demo",
+        "buttonUrl": "#demo"
+      }
     }
   }
 }
