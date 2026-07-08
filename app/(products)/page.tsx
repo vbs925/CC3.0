@@ -1,8 +1,7 @@
 import Navbar from "../components/Navbar";
 import ProductsHero from "./ProductsHero";
 import StatsBar from "./StatsBar";
-import ProductShowcase from "./ProductShowcase";
-import ProductDeepDive from "./ProductDeepDive";
+import ProductSectionWrapper from "./ProductSectionWrapper";
 import SecurePlatform from "./SecurePlatform";
 import InteractiveDemo from "./InteractiveDemo";
 import CtaSection from "./CtaSection";
@@ -155,8 +154,7 @@ export default async function ProductsPage() {
       <Navbar navbar={content.navbar} />
       <ProductsHero hero={content.hero} />
       <StatsBar stats={content.stats} />
-      <ProductShowcase showcase={content.showcase} />
-      {content.deepDive && <ProductDeepDive data={content.deepDive} />}
+      <ProductSectionWrapper showcase={content.showcase as any} />
       {content.platform && <SecurePlatform data={content.platform} />}
       {content.interactiveDemo && <InteractiveDemo data={content.interactiveDemo} />}
       {content.ctaSection && <CtaSection data={content.ctaSection} />}

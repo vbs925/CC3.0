@@ -1,5 +1,5 @@
 .showcase {
-  padding: 100px 0;
+  padding: 59px 0;
   background: var(--bg);
 }
 
@@ -35,22 +35,29 @@
 /* ── Tabs ── */
 .tabBar {
   display: flex;
-  flex-wrap: wrap;
-  gap: 12px;
+  flex-wrap: nowrap;
+  gap: 8px;
   margin-bottom: 60px;
+  overflow-x: auto;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.tabBar::-webkit-scrollbar {
+  display: none;
 }
 
 .tabBtn {
   background: #ffffff;
   color: #111111;
   font-family: var(--font-inter), sans-serif;
-  font-size: 13px;
+  font-size: 12px;
   font-weight: 500;
-  padding: 10px 20px;
+  padding: 6px 14px;
   border-radius: 50px;
   border: 1px solid #777777;
   cursor: pointer;
   transition: all 0.2s ease;
+  white-space: nowrap;
 }
 
 .tabBtn:hover {

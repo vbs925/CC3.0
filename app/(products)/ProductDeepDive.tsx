@@ -73,25 +73,33 @@ export default function ProductDeepDive({ data }: ProductDeepDiveProps) {
         {/* ── Built for Scale and Performance ── */}
         {data.performance && (
           <div className={styles.performanceSection}>
-            <h2 className={styles.performanceHeading}>
-              {data.performance.heading}
-            </h2>
-            <p className={styles.performanceDescription}>
-              {data.performance.description}
-            </p>
+            {data.performance.heading && (
+              <h2 className={styles.performanceHeading}>
+                {data.performance.heading}
+              </h2>
+            )}
+            {data.performance.description && (
+              <p className={styles.performanceDescription}>
+                {data.performance.description}
+              </p>
+            )}
             <div className={styles.performanceActions}>
-              <a
-                href={data.performance.primaryButton.url}
-                className={styles.btnPrimary}
-              >
-                {data.performance.primaryButton.label}
-              </a>
-              <a
-                href={data.performance.secondaryButton.url}
-                className={styles.btnSecondary}
-              >
-                {data.performance.secondaryButton.label}
-              </a>
+              {data.performance.primaryButton?.label && (
+                <a
+                  href={data.performance.primaryButton.url || '#'}
+                  className={styles.btnPrimary}
+                >
+                  {data.performance.primaryButton.label}
+                </a>
+              )}
+              {data.performance.secondaryButton?.label && (
+                <a
+                  href={data.performance.secondaryButton.url || '#'}
+                  className={styles.btnSecondary}
+                >
+                  {data.performance.secondaryButton.label}
+                </a>
+              )}
             </div>
           </div>
         )}

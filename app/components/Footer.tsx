@@ -159,11 +159,11 @@ export default function Footer({ footer }: FooterProps) {
         <div className={styles.bottomBar}>
           <div className={styles.logoWrap}>
             {footer.logo ? (
-              <Image src={footer.logo} alt="CortexCraft.AI" width={300} height={100} style={{ objectFit: 'contain' }} />
+              <Image src={footer.logo} alt="CortexCraft.AI" width={300} height={100} style={{ objectFit: 'contain', objectPosition: 'left' }} />
             ) : (
               // Fallback logo if none is provided via CMS
               <div className={styles.fallbackLogo}>
-                <Image src="/assets/images/CCAI logo 4.png" alt="CortexCraft.AI" width={450} height={150} style={{ objectFit: 'contain' }} />
+                <Image src="/assets/images/CCAI logo 4.png" alt="CortexCraft.AI" width={450} height={150} style={{ objectFit: 'contain', objectPosition: 'left' }} />
               </div>
             )}
           </div>

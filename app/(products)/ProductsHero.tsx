@@ -1,4 +1,5 @@
 import styles from "./ProductsHero.module.css";
+import NeuralAnimation from "./NeuralAnimation";
 
 interface HeroButton {
   label: string;
@@ -54,12 +55,8 @@ export default function ProductsHero({ hero }: HeroProps) {
 
         {/* ── Right: Geometric Node Graph ── */}
         <div className={styles.graphWrapper} aria-hidden="true">
-          {/* Neural Network Illustration */}
-          <img
-            src={hero.heroImage ?? "/assets/images/Neural Network Illustration.png"}
-            alt="Neural Network Pattern"
-            className={styles.graphImage}
-          />
+          {/* Neural Network Animation - placed on far right */}
+          <NeuralAnimation className={styles.graphImage} />
 
           {/* White card in front */}
           <div className={styles.graphCard} />

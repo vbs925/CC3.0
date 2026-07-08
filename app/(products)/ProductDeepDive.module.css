@@ -20,8 +20,8 @@
   background: #ffffff;
   border: 1.5px solid rgba(0, 0, 0, 0.2);
   display: flex;
-  width: 100%;
-  max-width: 1000px;
+  width: 143%;
+  max-width: 1107px;
 }
 
 .statItem {
@@ -46,7 +46,7 @@
 }
 
 .statLabel {
-  font-family: var(--font-inter), sans-serif;
+  font-family: Inter;
   font-size: 13px;
   color: #555555;
   font-weight: 500;
@@ -187,9 +187,11 @@
   .featuresGrid {
     grid-template-columns: repeat(2, 1fr);
   }
+
   .statsContainer {
     flex-direction: column;
   }
+
   .statItem:not(:last-child) {
     border-right: none;
     border-bottom: 1.5px solid rgba(0, 0, 0, 0.2);
@@ -200,6 +202,7 @@
   .featuresGrid {
     grid-template-columns: 1fr;
   }
+
   .performanceActions {
     flex-direction: column;
   }

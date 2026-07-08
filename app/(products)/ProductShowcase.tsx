@@ -1,7 +1,6 @@
 "use client";
 
 import styles from "./ProductShowcase.module.css";
-import { useState } from "react";
 
 interface Product {
   tabName: string;
@@ -19,10 +18,11 @@ interface ShowcaseProps {
     description: string;
     products: Product[];
   };
+  activeIndex: number;
+  onTabChange: (index: number) => void;
 }
 
-export default function ProductShowcase({ showcase }: ShowcaseProps) {
-  const [activeIndex, setActiveIndex] = useState(0);
+export default function ProductShowcase({ showcase, activeIndex, onTabChange }: ShowcaseProps) {
 
   // Fallback if no products are available
   if (!showcase.products || showcase.products.length === 0) {
@@ -50,7 +50,7 @@ export default function ProductShowcase({ showcase }: ShowcaseProps) {
                 role="tab"
                 aria-selected={isActive}
                 className={`${styles.tabBtn} ${isActive ? styles.tabBtnActive : ""}`}
-                onClick={() => setActiveIndex(index)}
+                onClick={() => onTabChange(index)}
               >
                 {product.tabName}
               </button>

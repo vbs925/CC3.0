@@ -70,83 +70,635 @@
   ],
   "showcase": {
     "label": "Our Products",
-    "description": "Seven products, one secure platform. Switch between them to see what each does and how fast it ships.",
+    "description": "Nine products, one secure platform. Switch between them to see what each does and how fast it ships.",
     "products": [
       {
         "tabName": "Cortex Voiz",
         "categoryLabel": "Voice & CX",
         "title": "Cortex Voiz: The AI Phone Assistant",
         "subtitle": "Production-quality AI voice agents for inbound and outbound calls without building telephony infrastructure from scratch.",
-        "description": "Manual phone handling is costly and hard to scale. Create, configure, and manage intelligent voice agents from one dashboard — whether you run a clinic, a bank, or a contact centre.",
-        "demoText": "Watch the 2-min demo — no form needed",
-        "videoPlaceholder": null
+        "description": "Manual phone handling is costly and hard to scale. Create, configure, and manage intelligent voice agents from one dashboard \u2014 whether you run a clinic, a bank, or a contact centre.",
+        "demoText": "Watch the 2-min demo \u2014 no form needed",
+        "videoPlaceholder": null,
+        "deepDive": {
+          "stats": [
+            {
+              "value": "98.6%",
+              "label": "Call Resolution Without A Human"
+            },
+            {
+              "value": "-40%",
+              "label": "Cost Per Handled Call"
+            },
+            {
+              "value": "3 DAYS",
+              "label": "To First Live Agent"
+            }
+          ],
+          "features": [
+            {
+              "title": "Intelligent Inbound & Outbound Calling",
+              "subtitle": "Automate your sales outreach and customer support.",
+              "image": null
+            },
+            {
+              "title": "Actionable Insights & Summaries",
+              "subtitle": "Every completed phone call automatically generates a full searchable transcript",
+              "image": null
+            },
+            {
+              "title": "Knowledge-Driven Responses (RAG)",
+              "subtitle": "Ground your AI's knowledge in your actual business data.",
+              "image": null
+            },
+            {
+              "title": "Multilingual Capabilities",
+              "subtitle": "Serve a global customer base effortlessly.",
+              "image": null
+            },
+            {
+              "title": "Risk-Free Browser Live Testing",
+              "subtitle": "Perfect your agent's behavior before going live.",
+              "image": null
+            },
+            {
+              "title": "Seamless CRM & API Integration",
+              "subtitle": "A robust REST API allowing seamless integration with your existing external applications and CRMs",
+              "image": null
+            }
+          ],
+          "performance": {
+            "heading": "Built for Scale and Performance",
+            "description": "Cortex Voiz is engineered for ultra-low latency voice interactions. It integrates directly with industry-leading telephony providers like Twilio and Plivo and uses a high-performance Python (FastAPI) orchestration layer to stream real-time audio directly to the Google Gemini Live WebSocket API",
+            "primaryButton": {
+              "label": "Learn More",
+              "url": "#cortex-voiz"
+            },
+            "secondaryButton": {
+              "label": "Schedule a Demo",
+              "url": "#demo"
+            }
+          }
+        }
+      },
+      {
+        "tabName": "Market Survey Tool",
+        "categoryLabel": "Research & Analytics",
+        "title": "Market Survey Tool: Automated Insights",
+        "subtitle": "Deploy AI-driven surveys that adapt to user responses in real-time.",
+        "description": "Gathering market intelligence is slow. Our tool engages respondents naturally, asking follow-up questions based on their answers, delivering deeper insights faster than static forms.",
+        "demoText": "Watch the 2-min demo \u2014 no form needed",
+        "videoPlaceholder": null,
+        "deepDive": {
+          "stats": [
+            {
+              "value": "98.6%",
+              "label": "Call Resolution Without A Human"
+            },
+            {
+              "value": "-40%",
+              "label": "Cost Per Handled Call"
+            },
+            {
+              "value": "3 DAYS",
+              "label": "To First Live Agent"
+            }
+          ],
+          "features": [
+            {
+              "title": "Intelligent Inbound & Outbound Calling",
+              "subtitle": "Automate your sales outreach and customer support.",
+              "image": null
+            },
+            {
+              "title": "Actionable Insights & Summaries",
+              "subtitle": "Every completed phone call automatically generates a full searchable transcript",
+              "image": null
+            },
+            {
+              "title": "Knowledge-Driven Responses (RAG)",
+              "subtitle": "Ground your AI's knowledge in your actual business data.",
+              "image": null
+            },
+            {
+              "title": "Multilingual Capabilities",
+              "subtitle": "Serve a global customer base effortlessly.",
+              "image": null
+            },
+            {
+              "title": "Risk-Free Browser Live Testing",
+              "subtitle": "Perfect your agent's behavior before going live.",
+              "image": null
+            },
+            {
+              "title": "Seamless CRM & API Integration",
+              "subtitle": "A robust REST API allowing seamless integration with your existing external applications and CRMs",
+              "image": null
+            }
+          ],
+          "performance": {
+            "heading": "Built for Scale and Performance",
+            "description": "Cortex Voiz is engineered for ultra-low latency voice interactions. It integrates directly with industry-leading telephony providers like Twilio and Plivo and uses a high-performance Python (FastAPI) orchestration layer to stream real-time audio directly to the Google Gemini Live WebSocket API",
+            "primaryButton": {
+              "label": "Learn More",
+              "url": "#cortex-voiz"
+            },
+            "secondaryButton": {
+              "label": "Schedule a Demo",
+              "url": "#demo"
+            }
+          }
+        }
+      },
+      {
+        "tabName": "Cortex Desk",
+        "categoryLabel": "Workspace",
+        "title": "Cortex Desk: The Intelligent Workspace",
+        "subtitle": "Unify your team's tools and communication in one AI-powered hub.",
+        "description": "Siloed tools reduce productivity. Cortex Desk integrates your existing software stack into a single interface with built-in AI assistance for faster task execution and collaboration.",
+        "demoText": "Watch the 2-min demo \u2014 no form needed",
+        "videoPlaceholder": null,
+        "deepDive": {
+          "stats": [
+            {
+              "value": "98.6%",
+              "label": "Call Resolution Without A Human"
+            },
+            {
+              "value": "-40%",
+              "label": "Cost Per Handled Call"
+            },
+            {
+              "value": "3 DAYS",
+              "label": "To First Live Agent"
+            }
+          ],
+          "features": [
+            {
+              "title": "Intelligent Inbound & Outbound Calling",
+              "subtitle": "Automate your sales outreach and customer support.",
+              "image": null
+            },
+            {
+              "title": "Actionable Insights & Summaries",
+              "subtitle": "Every completed phone call automatically generates a full searchable transcript",
+              "image": null
+            },
+            {
+              "title": "Knowledge-Driven Responses (RAG)",
+              "subtitle": "Ground your AI's knowledge in your actual business data.",
+              "image": null
+            },
+            {
+              "title": "Multilingual Capabilities",
+              "subtitle": "Serve a global customer base effortlessly.",
+              "image": null
+            },
+            {
+              "title": "Risk-Free Browser Live Testing",
+              "subtitle": "Perfect your agent's behavior before going live.",
+              "image": null
+            },
+            {
+              "title": "Seamless CRM & API Integration",
+              "subtitle": "A robust REST API allowing seamless integration with your existing external applications and CRMs",
+              "image": null
+            }
+          ],
+          "performance": {
+            "heading": "Built for Scale and Performance",
+            "description": "Cortex Voiz is engineered for ultra-low latency voice interactions. It integrates directly with industry-leading telephony providers like Twilio and Plivo and uses a high-performance Python (FastAPI) orchestration layer to stream real-time audio directly to the Google Gemini Live WebSocket API",
+            "primaryButton": {
+              "label": "Learn More",
+              "url": "#cortex-voiz"
+            },
+            "secondaryButton": {
+              "label": "Schedule a Demo",
+              "url": "#demo"
+            }
+          }
+        }
+      },
+      {
+        "tabName": "Cortex Workbench",
+        "categoryLabel": "Development",
+        "title": "Cortex Workbench: AI Developer Platform",
+        "subtitle": "Build, test, and deploy AI agents and workflows visually.",
+        "description": "Building AI features takes specialized talent. Cortex Workbench provides a drag-and-drop environment for teams to create custom AI pipelines without writing complex code.",
+        "demoText": "Watch the 2-min demo \u2014 no form needed",
+        "videoPlaceholder": null,
+        "deepDive": {
+          "stats": [
+            {
+              "value": "98.6%",
+              "label": "Call Resolution Without A Human"
+            },
+            {
+              "value": "-40%",
+              "label": "Cost Per Handled Call"
+            },
+            {
+              "value": "3 DAYS",
+              "label": "To First Live Agent"
+            }
+          ],
+          "features": [
+            {
+              "title": "Intelligent Inbound & Outbound Calling",
+              "subtitle": "Automate your sales outreach and customer support.",
+              "image": null
+            },
+            {
+              "title": "Actionable Insights & Summaries",
+              "subtitle": "Every completed phone call automatically generates a full searchable transcript",
+              "image": null
+            },
+            {
+              "title": "Knowledge-Driven Responses (RAG)",
+              "subtitle": "Ground your AI's knowledge in your actual business data.",
+              "image": null
+            },
+            {
+              "title": "Multilingual Capabilities",
+              "subtitle": "Serve a global customer base effortlessly.",
+              "image": null
+            },
+            {
+              "title": "Risk-Free Browser Live Testing",
+              "subtitle": "Perfect your agent's behavior before going live.",
+              "image": null
+            },
+            {
+              "title": "Seamless CRM & API Integration",
+              "subtitle": "A robust REST API allowing seamless integration with your existing external applications and CRMs",
+              "image": null
+            }
+          ],
+          "performance": {
+            "heading": "Built for Scale and Performance",
+            "description": "Cortex Voiz is engineered for ultra-low latency voice interactions. It integrates directly with industry-leading telephony providers like Twilio and Plivo and uses a high-performance Python (FastAPI) orchestration layer to stream real-time audio directly to the Google Gemini Live WebSocket API",
+            "primaryButton": {
+              "label": "Learn More",
+              "url": "#cortex-voiz"
+            },
+            "secondaryButton": {
+              "label": "Schedule a Demo",
+              "url": "#demo"
+            }
+          }
+        }
+      },
+      {
+        "tabName": "ERP in Health Care",
+        "categoryLabel": "Healthcare",
+        "title": "Healthcare ERP: Streamlined Operations",
+        "subtitle": "Purpose-built resource planning for clinics, hospitals, and care facilities.",
+        "description": "Managing healthcare operations requires specialized workflows. Our ERP solution handles patient scheduling, billing, and resource allocation with strict compliance and security built-in.",
+        "demoText": "Watch the 2-min demo \u2014 no form needed",
+        "videoPlaceholder": null,
+        "deepDive": {
+          "stats": [
+            {
+              "value": "98.6%",
+              "label": "Call Resolution Without A Human"
+            },
+            {
+              "value": "-40%",
+              "label": "Cost Per Handled Call"
+            },
+            {
+              "value": "3 DAYS",
+              "label": "To First Live Agent"
+            }
+          ],
+          "features": [
+            {
+              "title": "Intelligent Inbound & Outbound Calling",
+              "subtitle": "Automate your sales outreach and customer support.",
+              "image": null
+            },
+            {
+              "title": "Actionable Insights & Summaries",
+              "subtitle": "Every completed phone call automatically generates a full searchable transcript",
+              "image": null
+            },
+            {
+              "title": "Knowledge-Driven Responses (RAG)",
+              "subtitle": "Ground your AI's knowledge in your actual business data.",
+              "image": null
+            },
+            {
+              "title": "Multilingual Capabilities",
+              "subtitle": "Serve a global customer base effortlessly.",
+              "image": null
+            },
+            {
+              "title": "Risk-Free Browser Live Testing",
+              "subtitle": "Perfect your agent's behavior before going live.",
+              "image": null
+            },
+            {
+              "title": "Seamless CRM & API Integration",
+              "subtitle": "A robust REST API allowing seamless integration with your existing external applications and CRMs",
+              "image": null
+            }
+          ],
+          "performance": {
+            "heading": "Built for Scale and Performance",
+            "description": "Cortex Voiz is engineered for ultra-low latency voice interactions. It integrates directly with industry-leading telephony providers like Twilio and Plivo and uses a high-performance Python (FastAPI) orchestration layer to stream real-time audio directly to the Google Gemini Live WebSocket API",
+            "primaryButton": {
+              "label": "Learn More",
+              "url": "#cortex-voiz"
+            },
+            "secondaryButton": {
+              "label": "Schedule a Demo",
+              "url": "#demo"
+            }
+          }
+        }
+      },
+      {
+        "tabName": "ERP in Retail",
+        "categoryLabel": "Retail",
+        "title": "Retail ERP: Intelligent Commerce",
+        "subtitle": "End-to-end management for modern retail operations.",
+        "description": "Connect inventory, point-of-sale, and supply chain data. Our Retail ERP uses predictive AI to optimize stock levels and provide actionable insights for multi-channel sales.",
+        "demoText": "Watch the 2-min demo \u2014 no form needed",
+        "videoPlaceholder": null,
+        "deepDive": {
+          "stats": [
+            {
+              "value": "98.6%",
+              "label": "Call Resolution Without A Human"
+            },
+            {
+              "value": "-40%",
+              "label": "Cost Per Handled Call"
+            },
+            {
+              "value": "3 DAYS",
+              "label": "To First Live Agent"
+            }
+          ],
+          "features": [
+            {
+              "title": "Intelligent Inbound & Outbound Calling",
+              "subtitle": "Automate your sales outreach and customer support.",
+              "image": null
+            },
+            {
+              "title": "Actionable Insights & Summaries",
+              "subtitle": "Every completed phone call automatically generates a full searchable transcript",
+              "image": null
+            },
+            {
+              "title": "Knowledge-Driven Responses (RAG)",
+              "subtitle": "Ground your AI's knowledge in your actual business data.",
+              "image": null
+            },
+            {
+              "title": "Multilingual Capabilities",
+              "subtitle": "Serve a global customer base effortlessly.",
+              "image": null
+            },
+            {
+              "title": "Risk-Free Browser Live Testing",
+              "subtitle": "Perfect your agent's behavior before going live.",
+              "image": null
+            },
+            {
+              "title": "Seamless CRM & API Integration",
+              "subtitle": "A robust REST API allowing seamless integration with your existing external applications and CRMs",
+              "image": null
+            }
+          ],
+          "performance": {
+            "heading": "Built for Scale and Performance",
+            "description": "Cortex Voiz is engineered for ultra-low latency voice interactions. It integrates directly with industry-leading telephony providers like Twilio and Plivo and uses a high-performance Python (FastAPI) orchestration layer to stream real-time audio directly to the Google Gemini Live WebSocket API",
+            "primaryButton": {
+              "label": "Learn More",
+              "url": "#cortex-voiz"
+            },
+            "secondaryButton": {
+              "label": "Schedule a Demo",
+              "url": "#demo"
+            }
+          }
+        }
+      },
+      {
+        "tabName": "Knowledge Base",
+        "categoryLabel": "Information Management",
+        "title": "AI Knowledge Base: Instant Answers",
+        "subtitle": "Transform your company's documents into an interactive oracle.",
+        "description": "Finding internal information wastes hours. Simply upload your PDFs, docs, and wikis, and our Knowledge Base creates a secure conversational interface for your team to query instantly.",
+        "demoText": "Watch the 2-min demo \u2014 no form needed",
+        "videoPlaceholder": null,
+        "deepDive": {
+          "stats": [
+            {
+              "value": "98.6%",
+              "label": "Call Resolution Without A Human"
+            },
+            {
+              "value": "-40%",
+              "label": "Cost Per Handled Call"
+            },
+            {
+              "value": "3 DAYS",
+              "label": "To First Live Agent"
+            }
+          ],
+          "features": [
+            {
+              "title": "Intelligent Inbound & Outbound Calling",
+              "subtitle": "Automate your sales outreach and customer support.",
+              "image": null
+            },
+            {
+              "title": "Actionable Insights & Summaries",
+              "subtitle": "Every completed phone call automatically generates a full searchable transcript",
+              "image": null
+            },
+            {
+              "title": "Knowledge-Driven Responses (RAG)",
+              "subtitle": "Ground your AI's knowledge in your actual business data.",
+              "image": null
+            },
+            {
+              "title": "Multilingual Capabilities",
+              "subtitle": "Serve a global customer base effortlessly.",
+              "image": null
+            },
+            {
+              "title": "Risk-Free Browser Live Testing",
+              "subtitle": "Perfect your agent's behavior before going live.",
+              "image": null
+            },
+            {
+              "title": "Seamless CRM & API Integration",
+              "subtitle": "A robust REST API allowing seamless integration with your existing external applications and CRMs",
+              "image": null
+            }
+          ],
+          "performance": {
+            "heading": "Built for Scale and Performance",
+            "description": "Cortex Voiz is engineered for ultra-low latency voice interactions. It integrates directly with industry-leading telephony providers like Twilio and Plivo and uses a high-performance Python (FastAPI) orchestration layer to stream real-time audio directly to the Google Gemini Live WebSocket API",
+            "primaryButton": {
+              "label": "Learn More",
+              "url": "#cortex-voiz"
+            },
+            "secondaryButton": {
+              "label": "Schedule a Demo",
+              "url": "#demo"
+            }
+          }
+        }
+      },
+      {
+        "tabName": "CRM for Real Estate",
+        "categoryLabel": "Real Estate",
+        "title": "Real Estate CRM: Close More Deals",
+        "subtitle": "Manage leads, properties, and client relationships seamlessly.",
+        "description": "Tailored for property professionals, this CRM automates follow-ups, matches clients to listings using AI, and provides a unified view of your entire sales pipeline.",
+        "demoText": "Watch the 2-min demo \u2014 no form needed",
+        "videoPlaceholder": null,
+        "deepDive": {
+          "stats": [
+            {
+              "value": "98.6%",
+              "label": "Call Resolution Without A Human"
+            },
+            {
+              "value": "-40%",
+              "label": "Cost Per Handled Call"
+            },
+            {
+              "value": "3 DAYS",
+              "label": "To First Live Agent"
+            }
+          ],
+          "features": [
+            {
+              "title": "Intelligent Inbound & Outbound Calling",
+              "subtitle": "Automate your sales outreach and customer support.",
+              "image": null
+            },
+            {
+              "title": "Actionable Insights & Summaries",
+              "subtitle": "Every completed phone call automatically generates a full searchable transcript",
+              "image": null
+            },
+            {
+              "title": "Knowledge-Driven Responses (RAG)",
+              "subtitle": "Ground your AI's knowledge in your actual business data.",
+              "image": null
+            },
+            {
+              "title": "Multilingual Capabilities",
+              "subtitle": "Serve a global customer base effortlessly.",
+              "image": null
+            },
+            {
+              "title": "Risk-Free Browser Live Testing",
+              "subtitle": "Perfect your agent's behavior before going live.",
+              "image": null
+            },
+            {
+              "title": "Seamless CRM & API Integration",
+              "subtitle": "A robust REST API allowing seamless integration with your existing external applications and CRMs",
+              "image": null
+            }
+          ],
+          "performance": {
+            "heading": "Built for Scale and Performance",
+            "description": "Cortex Voiz is engineered for ultra-low latency voice interactions. It integrates directly with industry-leading telephony providers like Twilio and Plivo and uses a high-performance Python (FastAPI) orchestration layer to stream real-time audio directly to the Google Gemini Live WebSocket API",
+            "primaryButton": {
+              "label": "Learn More",
+              "url": "#cortex-voiz"
+            },
+            "secondaryButton": {
+              "label": "Schedule a Demo",
+              "url": "#demo"
+            }
+          }
+        }
+      },
+      {
+        "tabName": "Forecasting Prediction Model",
+        "categoryLabel": "Predictive AI",
+        "title": "Forecasting Model: See The Future",
+        "subtitle": "Accurate, AI-driven predictions for sales, demand, and growth.",
+        "description": "Stop relying on basic spreadsheets. Our forecasting engine analyzes historical data and external market factors to deliver highly accurate predictions, helping you make data-backed decisions.",
+        "demoText": "Watch the 2-min demo \u2014 no form needed",
+        "videoPlaceholder": null,
+        "deepDive": {
+          "stats": [
+            {
+              "value": "98.6%",
+              "label": "Call Resolution Without A Human"
+            },
+            {
+              "value": "-40%",
+              "label": "Cost Per Handled Call"
+            },
+            {
+              "value": "3 DAYS",
+              "label": "To First Live Agent"
+            }
+          ],
+          "features": [
+            {
+              "title": "Intelligent Inbound & Outbound Calling",
+              "subtitle": "Automate your sales outreach and customer support.",
+              "image": null
+            },
+            {
+              "title": "Actionable Insights & Summaries",
+              "subtitle": "Every completed phone call automatically generates a full searchable transcript",
+              "image": null
+            },
+            {
+              "title": "Knowledge-Driven Responses (RAG)",
+              "subtitle": "Ground your AI's knowledge in your actual business data.",
+              "image": null
+            },
+            {
+              "title": "Multilingual Capabilities",
+              "subtitle": "Serve a global customer base effortlessly.",
+              "image": null
+            },
+            {
+              "title": "Risk-Free Browser Live Testing",
+              "subtitle": "Perfect your agent's behavior before going live.",
+              "image": null
+            },
+            {
+              "title": "Seamless CRM & API Integration",
+              "subtitle": "A robust REST API allowing seamless integration with your existing external applications and CRMs",
+              "image": null
+            }
+          ],
+          "performance": {
+            "heading": "Built for Scale and Performance",
+            "description": "Cortex Voiz is engineered for ultra-low latency voice interactions. It integrates directly with industry-leading telephony providers like Twilio and Plivo and uses a high-performance Python (FastAPI) orchestration layer to stream real-time audio directly to the Google Gemini Live WebSocket API",
+            "primaryButton": {
+              "label": "Learn More",
+              "url": "#cortex-voiz"
+            },
+            "secondaryButton": {
+              "label": "Schedule a Demo",
+              "url": "#demo"
+            }
+          }
+        }
       }
     ]
-  },
-  "deepDive": {
-    "stats": [
-      {
-        "value": "98.6%",
-        "label": "Call Resolution Without A Human"
-      },
-      {
-        "value": "-40%",
-        "label": "Cost Per Handled Call"
-      },
-      {
-        "value": "3 DAYS",
-        "label": "To First Live Agent"
-      }
-    ],
-    "features": [
-      {
-        "title": "Intelligent Inbound & Outbound Calling",
-        "subtitle": "Automate your sales outreach and customer support.",
-        "image": null
-      },
-      {
-        "title": "Actionable Insights & Summaries",
-        "subtitle": "Every completed phone call automatically generates a full searchable transcript",
-        "image": null
-      },
-      {
-        "title": "Knowledge-Driven Responses (RAG)",
-        "subtitle": "Ground your AI's knowledge in your actual business data.",
-        "image": null
-      },
-      {
-        "title": "Multilingual Capabilities",
-        "subtitle": "Serve a global customer base effortlessly.",
-        "image": null
-      },
-      {
-        "title": "Risk-Free Browser Live Testing",
-        "subtitle": "Perfect your agent's behavior before going live.",
-        "image": null
-      },
-      {
-        "title": "Seamless CRM & API Integration",
-        "subtitle": "A robust REST API allowing seamless integration with your existing external applications and CRMs",
-        "image": null
-      }
-    ],
-    "performance": {
-      "heading": "Built for Scale and Performance",
-      "description": "Cortex Voiz is engineered for ultra-low latency voice interactions. It integrates directly with industry-leading telephony providers like Twilio and Plivo and uses a high-performance Python (FastAPI) orchestration layer to stream real-time audio directly to the Google Gemini Live WebSocket API",
-      "primaryButton": {
-        "label": "Learn More",
-        "url": "#cortex-voiz"
-      },
-      "secondaryButton": {
-        "label": "Schedule a Demo",
-        "url": "#demo"
-      }
-    }
   },
   "platform": {
     "label": "Built for Scale and Performance",
     "heading": "One Secure Platform Behind Every Product",
-    "description": "Every CortexCraft product runs on the same hardened platform — low-latency, integration-ready, and audit-friendly from day one, so it drops into your environment instead of fighting it.",
+    "description": "Every CortexCraft product runs on the same hardened platform \u2014 low-latency, integration-ready, and audit-friendly from day one, so it drops into your environment instead of fighting it.",
     "features": [
       {
         "title": "Latency",
@@ -209,7 +761,7 @@
   },
   "ctaSection": {
     "heading": "Ready to see it in your workflow?",
-    "description": "Tell us the operation you want to automate and we'll show you the product that fits — running on your scenario.",
+    "description": "Tell us the operation you want to automate and we'll show you the product that fits \u2014 running on your scenario.",
     "buttonLabel": "Book a live call",
     "buttonUrl": "#book"
   },
@@ -337,6 +889,6 @@
     "logo": null,
     "termsUrl": "#",
     "privacyUrl": "#",
-    "copyrightText": "© 2026 CortexCraft Innovation Labs"
+    "copyrightText": "\u00a9 2026 CortexCraft Innovation Labs"
   }
 }

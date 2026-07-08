@@ -1,5 +1,6 @@
 /* ── Hero Section ── */
 .hero {
+  position: relative;
   background: var(--bg);
   height: 720px;
   padding: 80px 0; /* Extra padding top and bottom */
@@ -10,6 +11,8 @@
 
 /* ── Two-column container ── */
 .container {
+  position: relative;
+  z-index: 2;
   width: 100%;
   display: grid;
   grid-template-columns: 480px 1fr;
@@ -38,9 +41,9 @@
 
 .heading {
   font-family: var(--font-space-grotesk), sans-serif;
-  font-size: 52px;
+  font-size: 48px;
   font-weight: 800;
-  line-height: 1.08;
+  line-height: 1.19;
   color: #111111;
   letter-spacing: -0.02em;
 }
@@ -112,10 +115,12 @@
 /* Neural network — anchored top-right corner, smaller size */
 .graphImage {
   position: absolute;
-  top: -27px;
-  right: 0;      /* Comes from the right corner of the page */
-  width: 67%;
-  height: auto;
+  top: -40px;
+  bottom: -40px;
+  right: -55%;      /* Pushed even further to the right */
+  left: auto;
+  width: 150%;     /* Much larger */
+  height: 120%;
   object-fit: contain;
   z-index: 1;
 }
