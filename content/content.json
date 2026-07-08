@@ -1032,6 +1032,77 @@
         "buttonLabel": "Schedule a Demo",
         "buttonUrl": "#demo"
       }
+    },
+    "interactiveDemo": {
+      "demo": {
+        "label": "Test It Yourself",
+        "heading": "Talk To Cortex Voiz & Test Your Own Scenario",
+        "description": "Pick a use case and our AI agent will call you and run it live, then answer anything you want to ask. The fastest way to judge it is to hear it.",
+        "note": "We'll call within ~30 seconds. The call takes about 2 minutes.",
+        "useCases": [
+          "Inbound Booking",
+          "Lead Qualification",
+          "Customer Support",
+          "Outbound Survey"
+        ],
+        "form": {
+          "nameLabel": "Name",
+          "namePlaceholder": "Enter your full name",
+          "phoneLabel": "Phone Number",
+          "phonePlaceholder": "11111-11111",
+          "emailLabel": "Work email",
+          "emailPlaceholder": "name@email.com",
+          "useCaseLabel": "What should the agent demo?",
+          "agreementText": "I agree to receive a one-time automated call from CortexCraft for this demo, and to the privacy policy.",
+          "buttonLabel": "Call me now"
+        }
+      },
+      "testimonial": {
+        "quote": "\"Cortex Voiz answered 30,000 patient calls in the first month and booked 41% of them without a single human picking up.\"",
+        "author": "Surya",
+        "role": "Head of Operations, SD",
+        "statValue": "41%",
+        "statLabel": "of inbound appointments booked fully autonomously, day one."
+      }
+    },
+    "platformSection": {
+      "label": "Under the Hood",
+      "heading": "Built For Real-Time Conversation At Scale",
+      "description": "A streaming FastAPI pipeline moves audio to real-time speech and reasoning models, so turn-taking feels human, not robotic.",
+      "features": [
+        {
+          "title": "Latency",
+          "description": "Sub-second turn-taking over a streaming WebSocket pipeline."
+        },
+        {
+          "title": "Orchestration",
+          "description": "FastAPI layer streaming audio to real-time speech and reasoning models."
+        },
+        {
+          "title": "Languages",
+          "description": "Multi-language with native accent recognition and dialect handling."
+        },
+        {
+          "title": "Scale",
+          "description": "Hundreds of simultaneous calls without degradation."
+        },
+        {
+          "title": "Security",
+          "description": "Encrypted in transit and at rest, with full call audit logs."
+        },
+        {
+          "title": "Data Residency",
+          "description": "Choose where call data and recordings are stored."
+        }
+      ],
+      "tags": [
+        "WebRTC",
+        "SIP / VOIP",
+        "REST API",
+        "Webhooks",
+        "RAG",
+        "SSO / SAML"
+      ]
     }
   }
 }

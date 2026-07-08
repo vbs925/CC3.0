@@ -5,6 +5,8 @@ import ProductDetailProblem from "./ProductDetailProblem";
 import ProductDetailStats from "./ProductDetailStats";
 import ProductDetailCapabilities from "./ProductDetailCapabilities";
 import ProductDetailUseCases from "./ProductDetailUseCases";
+import SecurePlatform from "../(products)/SecurePlatform";
+import InteractiveDemo from "../(products)/InteractiveDemo";
 import type { Metadata } from "next";
 
 // ── Types ──────────────────────────────────────────────────────────────────
@@ -61,6 +63,40 @@ interface PageContent {
       description: string;
       buttonLabel: string;
       buttonUrl: string;
+    };
+  };
+  platformSection: {
+    label: string;
+    heading: string;
+    description: string;
+    features: { title: string; description: string }[];
+    tags: string[];
+  };
+  interactiveDemo: {
+    demo: {
+      label: string;
+      heading: string;
+      description: string;
+      note: string;
+      useCases: string[];
+      form: {
+        nameLabel: string;
+        namePlaceholder: string;
+        phoneLabel: string;
+        phonePlaceholder: string;
+        emailLabel: string;
+        emailPlaceholder: string;
+        useCaseLabel: string;
+        agreementText: string;
+        buttonLabel: string;
+      };
+    };
+    testimonial: {
+      quote: string;
+      author: string;
+      role: string;
+      statValue: string;
+      statLabel: string;
     };
   };
 }
@@ -169,6 +205,8 @@ export default async function CortexVoizPage() {
       <ProductDetailProblem problemSection={pageContent.problemSection} />
       <ProductDetailCapabilities data={pageContent.capabilitiesSection} />
       <ProductDetailUseCases data={pageContent.useCasesSection} />
+      <SecurePlatform data={pageContent.platformSection} />
+      <InteractiveDemo data={pageContent.interactiveDemo} />
       <Footer footer={site.footer} />
     </main>
   );
