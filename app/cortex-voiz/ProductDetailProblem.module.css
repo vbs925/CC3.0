@@ -1,0 +1,179 @@
+/* ── "Why Cortex Voiz Exists?" Section ── */
+
+.section {
+  padding: 80px 0 0 0;
+  background: #ffffff;
+}
+
+.container {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 64px;
+}
+
+/* ── Left Text Block ── */
+.textBlock {
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 44px;
+}
+
+.label {
+  font-family: "JetBrains Mono", var(--font-jetbrains-mono), monospace;
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #4338CA;
+}
+
+.heading {
+  font-family: "Space Grotesk", var(--font-space-grotesk), sans-serif;
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 1.12;
+  color: #111111;
+  letter-spacing: -0.025em;
+}
+
+.subtitle {
+  font-family: "Inter", var(--font-inter), sans-serif;
+  font-size: 14.5px;
+  font-weight: 700;
+  color: #222222;
+  line-height: 1.55;
+}
+
+.body {
+  font-family: "Inter", var(--font-inter), sans-serif;
+  font-size: 13.5px;
+  font-weight: 400;
+  color: #555555;
+  line-height: 1.75;
+}
+
+/* ── Video Card ── */
+.videoCard {
+  width: 100%;
+}
+
+.videoGradient {
+  width: 100%;
+  height: 500px;
+  border-radius: 20px;
+  background: linear-gradient(135deg, #5a5347 0%, #6e5c3a 40%, #a07622 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* ── Amber Play Button ── */
+.playBtn {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: #F8AB05;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0 4px 20px rgba(248, 171, 5, 0.35);
+}
+
+.playBtn:hover {
+  transform: scale(1.07);
+  box-shadow: 0 6px 28px rgba(248, 171, 5, 0.5);
+}
+
+.demoCaption {
+  font-family: "JetBrains Mono", var(--font-jetbrains-mono), monospace;
+  font-size: 12px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.7);
+  letter-spacing: 0.04em;
+}
+
+/* ── Stats Row — cream, separated from video card ── */
+.statsRow {
+  width: 100%;
+  display: flex;
+  background: #F9F5EB;
+  border: 1px solid #000000;
+  border-radius: 0px;
+  margin-top: 24px;
+}
+
+.statItem {
+  flex: 1;
+  padding: 36px 44px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.statItem:not(:last-child) {
+  border-right: 1px solid #E0D9CC;
+}
+
+.statValue {
+  font-family: "Space Grotesk", var(--font-space-grotesk), sans-serif;
+  font-size: 34px;
+  font-weight: 800;
+  color: #2a2a2a;
+  line-height: 1;
+  letter-spacing: -0.02em;
+}
+
+.statLabel {
+  font-family: "Inter", var(--font-inter), sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  color: #777777;
+  letter-spacing: 0.01em;
+}
+
+/* ── Responsive ── */
+@media (max-width: 1024px) {
+  .container {
+    padding: 0 40px;
+  }
+  .heading {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 768px) {
+  .section {
+    padding: 60px 0 0 0;
+  }
+  .container {
+    padding: 0 24px;
+  }
+  .textBlock {
+    max-width: 100%;
+  }
+  .heading {
+    font-size: 26px;
+  }
+  .videoGradient {
+    height: 320px;
+    border-radius: 16px 16px 0 0;
+  }
+  .statsRow {
+    flex-direction: column;
+    border-radius: 0px;
+  }
+  .statItem:not(:last-child) {
+    border-right: none;
+    border-bottom: 1px solid #E0D9CC;
+  }
+  .statItem {
+    padding: 28px 28px;
+  }
+}

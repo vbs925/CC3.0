@@ -1,55 +1,58 @@
 .section {
-  padding: 2px 0 80px 0;
+  padding: 0 0 80px 0;
   background: var(--bg);
 }
 
 .container {
   max-width: 1300px;
   margin: 0 auto;
-  padding: 0 40px;
+  padding: 0 64px;
 }
 
 /* ── Stats Bar ── */
+/* Sits flush below the video card — no top gap */
 .statsWrapper {
-  margin-bottom: 100px;
+  margin-bottom: 80px;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
 }
 
 .statsContainer {
   background: #ffffff;
-  border: 1.5px solid rgba(0, 0, 0, 0.2);
+  border: 1px solid #000000;
   display: flex;
-  width: 143%;
-  max-width: 1107px;
+  width: 100%;
+  border-radius: 0px;
+  margin-top: 40px;
 }
 
 .statItem {
   flex: 1;
-  padding: 40px;
+  padding: 36px 44px;
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 10px;
 }
 
 .statItem:not(:last-child) {
-  border-right: 1.5px solid rgba(0, 0, 0, 0.2);
+  border-right: 1px solid #000000;
 }
 
 .statValue {
-  font-family: var(--font-space-grotesk), sans-serif;
-  font-size: 36px;
-  font-weight: 700;
-  color: #111111;
+  font-family: "Space Grotesk", var(--font-space-grotesk), sans-serif;
+  font-size: 34px;
+  font-weight: 800;
+  color: #2a2a2a;
   line-height: 1;
   letter-spacing: -0.02em;
 }
 
 .statLabel {
-  font-family: Inter;
-  font-size: 13px;
-  color: #555555;
-  font-weight: 500;
+  font-family: "Inter", var(--font-inter), sans-serif;
+  font-size: 12px;
+  color: #777777;
+  font-weight: 400;
+  letter-spacing: 0.01em;
 }
 
 /* ── Core Features ── */
@@ -194,7 +197,7 @@
 
   .statItem:not(:last-child) {
     border-right: none;
-    border-bottom: 1.5px solid rgba(0, 0, 0, 0.2);
+    border-bottom: 1px solid #000000;
   }
 }
 

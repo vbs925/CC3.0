@@ -1,0 +1,164 @@
+import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
+import ProductDetailHero from "./ProductDetailHero";
+import ProductDetailProblem from "./ProductDetailProblem";
+import ProductDetailStats from "./ProductDetailStats";
+import type { Metadata } from "next";
+
+// ── Types ──────────────────────────────────────────────────────────────────
+
+interface NavLink {
+  label: string;
+  url: string;
+  isActive: boolean;
+}
+
+interface PageContent {
+  hero: {
+    categoryLabel: string;
+    heading: string;
+    description: string;
+    primaryButton: { label: string; url: string };
+    secondaryButton: { label: string; url: string };
+  };
+  featuresSection: {
+    label: string;
+    heading: string;
+    items: { icon: string; title: string; description: string }[];
+  };
+  statsSection: {
+    label: string;
+    heading: string;
+    items: { value: string; label: string }[];
+  };
+  cta: {
+    heading: string;
+    description: string;
+    buttonLabel: string;
+    buttonUrl: string;
+  };
+  problemSection: {
+    label: string;
+    heading: string;
+    subtitle: string;
+    body: string;
+    demoCaption: string;
+    videoImage: string | null;
+    stats: { value: string; label: string }[];
+  };
+  navigation: {
+    prevProduct: { label: string; url: string };
+    nextProduct: { label: string; url: string };
+  };
+}
+
+interface NavbarContent {
+  logo: string | null;
+  ctaLabel: string;
+  ctaUrl: string;
+  links: NavLink[];
+}
+
+// ── Metadata ───────────────────────────────────────────────────────────────
+
+export const metadata: Metadata = {
+  title: "Cortex Voiz: The AI Phone Assistant — CortexCraft.AI",
+  description:
+    "Production-quality AI voice agents for inbound and outbound calls. Handle 24/7 customer inquiries, run sales outreach, and reduce support costs 40%.",
+};
+
+// ── Data Fetchers ──────────────────────────────────────────────────────────
+
+async function getPageContent(): Promise<PageContent | null> {
+  try {
+    const res = await fetch("http://localhost:8000/api/cms/product/cortex-voiz/", {
+      next: { revalidate: 0 },
+    });
+    if (!res.ok) throw new Error(`API returned ${res.status}`);
+    return await res.json();
+  } catch (err) {
+    console.warn("[CMS] Cortex Voiz API unavailable:", err);
+    return null;
+  }
+}
+
+async function getNavbarContent(): Promise<NavbarContent> {
+  try {
+    const res = await fetch("http://localhost:8000/api/cms/content/", {
+      next: { revalidate: 0 },
+    });
+    if (!res.ok) throw new Error(`API returned ${res.status}`);
+    const data = await res.json();
+    return data.navbar;
+  } catch {
+    return {
+      logo: null,
+      ctaLabel: "Get in touch",
+      ctaUrl: "#contact",
+      links: [
+        { label: "Services", url: "#", isActive: false },
+        { label: "Products", url: "/products", isActive: true },
+        { label: "Works", url: "#", isActive: false },
+        { label: "About", url: "#", isActive: false },
+        { label: "Blogs", url: "#", isActive: false },
+      ],
+    };
+  }
+}
+
+async function getSiteContent(): Promise<{ navbar: NavbarContent; footer: any }> {
+  try {
+    const res = await fetch("http://localhost:8000/api/cms/content/", {
+      next: { revalidate: 0 },
+    });
+    if (!res.ok) throw new Error(`API returned ${res.status}`);
+    const data = await res.json();
+    return { navbar: data.navbar, footer: data.footer };
+  } catch {
+    return {
+      navbar: {
+        logo: null,
+        ctaLabel: "Get in touch",
+        ctaUrl: "#contact",
+        links: [
+          { label: "Services", url: "#", isActive: false },
+          { label: "Products", url: "/products", isActive: true },
+          { label: "Works", url: "#", isActive: false },
+          { label: "About", url: "#", isActive: false },
+          { label: "Blogs", url: "#", isActive: false },
+        ],
+      },
+      footer: null,
+    };
+  }
+}
+
+// ── Fallback content (shown if API is unavailable) ─────────────────────────
+
+import fallbackData from "../../content/content.json";
+const FALLBACK: PageContent = fallbackData.cortexVoiz;
+
+// ── Page ──────────────────────────────────────────────────────────────────
+
+export default async function CortexVoizPage() {
+  const [content, site] = await Promise.all([
+    getPageContent(),
+    getSiteContent(),
+  ]);
+
+  const pageContent = content ?? FALLBACK;
+
+  return (
+    <main>
+      <Navbar navbar={site.navbar} />
+      <ProductDetailHero hero={pageContent.hero} />
+      <ProductDetailStats
+        items={pageContent.statsSection.items}
+        prevProduct={pageContent.navigation.prevProduct}
+        nextProduct={pageContent.navigation.nextProduct}
+      />
+      <ProductDetailProblem problemSection={pageContent.problemSection} />
+      <Footer footer={site.footer} />
+    </main>
+  );
+}

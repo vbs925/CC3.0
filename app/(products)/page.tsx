@@ -123,6 +123,7 @@ interface SiteContent {
     buttonLabel: string;
     buttonUrl: string;
   };
+  footer?: any;
 }
 
 // ── Content fetcher (SSR, with fallback) ──────────────────────────────────

@@ -70,12 +70,12 @@
   ],
   "showcase": {
     "label": "Our Products",
-    "description": "Nine products, one secure platform. Switch between them to see what each does and how fast it ships.",
+    "description": "Ten products, one secure platform. Switch between them to see what each does, its six core capabilities, and how fast it ships.",
     "products": [
       {
         "tabName": "Cortex Voiz",
         "categoryLabel": "Voice & CX",
-        "title": "Cortex Voiz: The AI Phone Assistant",
+        "title": "Cortex Voiz: AI Solution",
         "subtitle": "Production-quality AI voice agents for inbound and outbound calls without building telephony infrastructure from scratch.",
         "description": "Manual phone handling is costly and hard to scale. Create, configure, and manage intelligent voice agents from one dashboard \u2014 whether you run a clinic, a bank, or a contact centre.",
         "demoText": "Watch the 2-min demo \u2014 no form needed",
@@ -142,9 +142,9 @@
         }
       },
       {
-        "tabName": "Market Survey Tool",
+        "tabName": "Cortex Insight",
         "categoryLabel": "Research & Analytics",
-        "title": "Market Survey Tool: Automated Insights",
+        "title": "Cortex Insight: AI Solution",
         "subtitle": "Deploy AI-driven surveys that adapt to user responses in real-time.",
         "description": "Gathering market intelligence is slow. Our tool engages respondents naturally, asking follow-up questions based on their answers, delivering deeper insights faster than static forms.",
         "demoText": "Watch the 2-min demo \u2014 no form needed",
@@ -213,7 +213,7 @@
       {
         "tabName": "Cortex Desk",
         "categoryLabel": "Workspace",
-        "title": "Cortex Desk: The Intelligent Workspace",
+        "title": "Cortex Desk: AI Solution",
         "subtitle": "Unify your team's tools and communication in one AI-powered hub.",
         "description": "Siloed tools reduce productivity. Cortex Desk integrates your existing software stack into a single interface with built-in AI assistance for faster task execution and collaboration.",
         "demoText": "Watch the 2-min demo \u2014 no form needed",
@@ -282,7 +282,7 @@
       {
         "tabName": "Cortex Workbench",
         "categoryLabel": "Development",
-        "title": "Cortex Workbench: AI Developer Platform",
+        "title": "Cortex Workbench: AI Solution",
         "subtitle": "Build, test, and deploy AI agents and workflows visually.",
         "description": "Building AI features takes specialized talent. Cortex Workbench provides a drag-and-drop environment for teams to create custom AI pipelines without writing complex code.",
         "demoText": "Watch the 2-min demo \u2014 no form needed",
@@ -349,9 +349,9 @@
         }
       },
       {
-        "tabName": "ERP in Health Care",
+        "tabName": "Cortex Care",
         "categoryLabel": "Healthcare",
-        "title": "Healthcare ERP: Streamlined Operations",
+        "title": "Cortex Care: AI Solution",
         "subtitle": "Purpose-built resource planning for clinics, hospitals, and care facilities.",
         "description": "Managing healthcare operations requires specialized workflows. Our ERP solution handles patient scheduling, billing, and resource allocation with strict compliance and security built-in.",
         "demoText": "Watch the 2-min demo \u2014 no form needed",
@@ -418,9 +418,9 @@
         }
       },
       {
-        "tabName": "ERP in Retail",
+        "tabName": "Cortex Merchant",
         "categoryLabel": "Retail",
-        "title": "Retail ERP: Intelligent Commerce",
+        "title": "Cortex Merchant: AI Solution",
         "subtitle": "End-to-end management for modern retail operations.",
         "description": "Connect inventory, point-of-sale, and supply chain data. Our Retail ERP uses predictive AI to optimize stock levels and provide actionable insights for multi-channel sales.",
         "demoText": "Watch the 2-min demo \u2014 no form needed",
@@ -487,9 +487,9 @@
         }
       },
       {
-        "tabName": "Knowledge Base",
+        "tabName": "Cortex Space",
         "categoryLabel": "Information Management",
-        "title": "AI Knowledge Base: Instant Answers",
+        "title": "Cortex Space: AI Solution",
         "subtitle": "Transform your company's documents into an interactive oracle.",
         "description": "Finding internal information wastes hours. Simply upload your PDFs, docs, and wikis, and our Knowledge Base creates a secure conversational interface for your team to query instantly.",
         "demoText": "Watch the 2-min demo \u2014 no form needed",
@@ -556,9 +556,9 @@
         }
       },
       {
-        "tabName": "CRM for Real Estate",
+        "tabName": "Cortex Guide",
         "categoryLabel": "Real Estate",
-        "title": "Real Estate CRM: Close More Deals",
+        "title": "Cortex Guide: AI Solution",
         "subtitle": "Manage leads, properties, and client relationships seamlessly.",
         "description": "Tailored for property professionals, this CRM automates follow-ups, matches clients to listings using AI, and provides a unified view of your entire sales pipeline.",
         "demoText": "Watch the 2-min demo \u2014 no form needed",
@@ -625,9 +625,9 @@
         }
       },
       {
-        "tabName": "Forecasting Prediction Model",
+        "tabName": "Cortex Forecast",
         "categoryLabel": "Predictive AI",
-        "title": "Forecasting Model: See The Future",
+        "title": "Cortex Forecast: AI Solution",
         "subtitle": "Accurate, AI-driven predictions for sales, demand, and growth.",
         "description": "Stop relying on basic spreadsheets. Our forecasting engine analyzes historical data and external market factors to deliver highly accurate predictions, helping you make data-backed decisions.",
         "demoText": "Watch the 2-min demo \u2014 no form needed",
@@ -692,6 +692,15 @@
             }
           }
         }
+      },
+      {
+        "tabName": "Cortex Clinic",
+        "categoryLabel": "AI Product",
+        "title": "Cortex Clinic: AI Solution",
+        "subtitle": "Next generation AI capabilities.",
+        "description": "Our latest intelligent product.",
+        "demoText": "Watch the 2-min demo \u2014 no form needed",
+        "videoPlaceholder": null
       }
     ]
   },
@@ -890,5 +899,80 @@
     "termsUrl": "#",
     "privacyUrl": "#",
     "copyrightText": "\u00a9 2026 CortexCraft Innovation Labs"
+  },
+  "cortexVoiz": {
+    "hero": {
+      "categoryLabel": "Voice & CX",
+      "heading": "Cortex Voiz: The AI Phone Assistant",
+      "description": "Production-quality AI voice agents for inbound and outbound calls. Handle 24/7 customer inquiries, run sales outreach, and reduce support costs 40% \u2014 without building telephony infrastructure from scratch.",
+      "primaryButton": {
+        "label": "View Our Products",
+        "url": "/products"
+      },
+      "secondaryButton": {
+        "label": "Schedule a Demo",
+        "url": "#demo"
+      }
+    },
+    "statsSection": {
+      "label": "By the Numbers",
+      "heading": "Built for Enterprise Scale",
+      "items": [
+        {
+          "value": "100%",
+          "label": "of inbound calls answered instantly"
+        },
+        {
+          "value": "40%",
+          "label": "reduction in support costs"
+        },
+        {
+          "value": "< 30s",
+          "label": "average call response time"
+        },
+        {
+          "value": "24/7",
+          "label": "uptime with no staffing overhead"
+        }
+      ]
+    },
+    "problemSection": {
+      "label": "The Problem",
+      "heading": "Why Cortex Voiz Exists?",
+      "subtitle": "Manual phone handling is costly, doesn't scale, and ties up your best people.",
+      "body": "Every incoming call needs a human. Every outbound campaign requires a team. With Cortex Voiz, create intelligent voice agents that handle both \u2014 inbound support, outbound sales, appointment scheduling, and more \u2014 without building telephony infrastructure from scratch.",
+      "demoCaption": "Watch the 2-min demo \u2014 no form needed",
+      "videoImage": null,
+      "stats": [
+        {
+          "value": "98.6%",
+          "label": "Call Resolution Without A Human"
+        },
+        {
+          "value": "-40%",
+          "label": "Cost Per Handled Call"
+        },
+        {
+          "value": "3 DAYS",
+          "label": "To First Live Agent"
+        }
+      ]
+    },
+    "cta": {
+      "heading": "Ready to automate your calls?",
+      "description": "Book a 15-minute live call and hear Cortex Voiz run on your own scenario.",
+      "buttonLabel": "Book a live call",
+      "buttonUrl": "#book"
+    },
+    "navigation": {
+      "prevProduct": {
+        "label": "All Products",
+        "url": "/products"
+      },
+      "nextProduct": {
+        "label": "Cortex Insights",
+        "url": "/cortex-insights"
+      }
+    }
   }
 }

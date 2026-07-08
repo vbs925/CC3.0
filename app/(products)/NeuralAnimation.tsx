@@ -46,7 +46,7 @@ function pickNext(current: number, prev: number): number {
   return pool[Math.floor(Math.random() * pool.length)];
 }
 
-export default function NeuralAnimation({ className }: { className?: string }) {
+export default function NeuralAnimation({ className, variant = "animated" }: { className?: string, variant?: "animated" | "static" }) {
   const [light, setLight] = useState({
     x: NODES[0].x,
     y: NODES[0].y,
@@ -66,6 +66,8 @@ export default function NeuralAnimation({ className }: { className?: string }) {
   const activeTimeout = useRef<ReturnType<typeof setTimeout> | undefined>(undefined);
 
   useEffect(() => {
+    if (variant === "static") return;
+
     const s = stateRef.current;
     s.startTime = performance.now();
     s.currentNode = 0;
@@ -109,7 +111,7 @@ export default function NeuralAnimation({ className }: { className?: string }) {
       cancelAnimationFrame(rafRef.current);
       clearTimeout(activeTimeout.current);
     };
-  }, []);
+  }, [variant]);
 
   return (
     <div
@@ -168,7 +170,7 @@ export default function NeuralAnimation({ className }: { className?: string }) {
         ))}
 
         {/* Active edge highlight */}
-        {EDGES.map(([a, b], i) => {
+        {variant === "animated" && EDGES.map(([a, b], i) => {
           const isActive =
             (light.fromNode === a && light.toNode === b) ||
             (light.fromNode === b && light.toNode === a);
@@ -191,8 +193,8 @@ export default function NeuralAnimation({ className }: { className?: string }) {
 
         {/* Nodes */}
         {NODES.map(node => {
-          const isActive = activeNode === node.id;
-          const isCurrentFrom = light.fromNode === node.id;
+          const isActive = variant === "animated" && activeNode === node.id;
+          const isCurrentFrom = variant === "animated" && light.fromNode === node.id;
           return (
             <g key={node.id}>
               {(isActive || isCurrentFrom) && (
@@ -215,30 +217,32 @@ export default function NeuralAnimation({ className }: { className?: string }) {
           );
         })}
 
-        {/* Traveling light — outer glow */}
-        <circle
-          cx={light.x}
-          cy={light.y}
-          r={8}
-          fill="#e8b84b"
-          opacity={0.35}
-          filter="url(#glow-dot)"
-        />
-        {/* Traveling light — core */}
-        <circle
-          cx={light.x}
-          cy={light.y}
-          r={4.5}
-          fill="#f5c842"
-          filter="url(#glow-dot)"
-        />
-        {/* Traveling light — bright center */}
-        <circle
-          cx={light.x}
-          cy={light.y}
-          r={2}
-          fill="#fffbe8"
-        />
+        {/* Traveling light */}
+        {variant === "animated" && (
+          <>
+            <circle
+              cx={light.x}
+              cy={light.y}
+              r={8}
+              fill="#e8b84b"
+              opacity={0.35}
+              filter="url(#glow-dot)"
+            />
+            <circle
+              cx={light.x}
+              cy={light.y}
+              r={4.5}
+              fill="#f5c842"
+              filter="url(#glow-dot)"
+            />
+            <circle
+              cx={light.x}
+              cy={light.y}
+              r={2}
+              fill="#fffbe8"
+            />
+          </>
+        )}
       </svg>
     </div>
   );

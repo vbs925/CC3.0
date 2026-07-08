@@ -34,10 +34,11 @@ export default function ProductShowcase({ showcase, activeIndex, onTabChange }: 
   return (
     <section className={styles.showcase} aria-label="Product Showcase">
       <div className={styles.container}>
-        {/* ── Top Header ── */}
+
+        {/* ── Header ── */}
         <div className={styles.header}>
-          <p className={styles.label}>{showcase.label}</p>
-          <p className={styles.description}>{showcase.description}</p>
+          <h3 className={styles.sectionLabel}>{showcase.label}</h3>
+          <p className={styles.sectionDescription}>{showcase.description}</p>
         </div>
 
         {/* ── Tabs ── */}
@@ -58,31 +59,34 @@ export default function ProductShowcase({ showcase, activeIndex, onTabChange }: 
           })}
         </div>
 
-        {/* ── Content Area ── */}
-        <div className={styles.contentArea}>
-          {/* Left Text Info */}
-          <div className={styles.infoBox}>
+        {/* ── Content Layout: Left text + Right video stacked ── */}
+        <div className={styles.contentLayout}>
+
+          {/* Left: Text Info */}
+          <div className={styles.textBlock}>
             <p className={styles.categoryLabel}>{activeProduct.categoryLabel}</p>
             <h2 className={styles.productTitle}>{activeProduct.title}</h2>
             <p className={styles.productSubtitle}>{activeProduct.subtitle}</p>
-            <div 
+            <div
               className={styles.productDescription}
-              dangerouslySetInnerHTML={{ __html: activeProduct.description }} 
+              dangerouslySetInnerHTML={{ __html: activeProduct.description }}
             />
           </div>
 
-          {/* Right Video Box */}
-          <div className={styles.videoBox}>
-            <div className={styles.videoGradient}>
-              <button className={styles.playBtn} aria-label="Play Demo">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M8 5V19L19 12L8 5Z" fill="#111111"/>
-                </svg>
-              </button>
-              <p className={styles.demoText}>{activeProduct.demoText}</p>
-            </div>
+        </div>
+
+        {/* ── Full-width Video Card ── */}
+        <div className={styles.videoCard}>
+          <div className={styles.videoGradient}>
+            <button className={styles.playBtn} aria-label="Play Demo">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M8 5V19L19 12L8 5Z" fill="#111111" />
+              </svg>
+            </button>
+            <p className={styles.demoText}>{activeProduct.demoText}</p>
           </div>
         </div>
+
       </div>
     </section>
   );
