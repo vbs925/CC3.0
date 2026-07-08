@@ -7,11 +7,9 @@ interface Stat {
 
 interface StatsBarProps {
   items: Stat[];
-  prevProduct?: { label: string; url: string } | null;
-  nextProduct?: { label: string; url: string } | null;
 }
 
-export default function ProductDetailStats({ items, prevProduct, nextProduct }: StatsBarProps) {
+export default function ProductDetailStats({ items }: StatsBarProps) {
   return (
     <>
       {/* ── Stats Bar ── */}
@@ -26,26 +24,7 @@ export default function ProductDetailStats({ items, prevProduct, nextProduct }: 
         </div>
       </section>
 
-      {/* ── Product Navigation ── */}
-      <nav className={styles.productNav} aria-label="Product Navigation">
-        <div className={styles.productNavInner}>
-          {prevProduct ? (
-            <a href={prevProduct.url} className={styles.productNavPrev}>
-              ← {prevProduct.label}
-            </a>
-          ) : (
-            <a href="/products" className={styles.productNavPrev}>
-              ← All Products
-            </a>
-          )}
 
-          {nextProduct && (
-            <a href={nextProduct.url} className={styles.productNavNext}>
-              {nextProduct.label} →
-            </a>
-          )}
-        </div>
-      </nav>
     </>
   );
 }

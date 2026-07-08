@@ -3,6 +3,8 @@ import Footer from "../components/Footer";
 import ProductDetailHero from "./ProductDetailHero";
 import ProductDetailProblem from "./ProductDetailProblem";
 import ProductDetailStats from "./ProductDetailStats";
+import ProductDetailCapabilities from "./ProductDetailCapabilities";
+import ProductDetailUseCases from "./ProductDetailUseCases";
 import type { Metadata } from "next";
 
 // ── Types ──────────────────────────────────────────────────────────────────
@@ -21,7 +23,17 @@ interface PageContent {
     primaryButton: { label: string; url: string };
     secondaryButton: { label: string; url: string };
   };
-  featuresSection: {
+  capabilitiesSection: {
+    label: string;
+    heading: string;
+    items: {
+      title: string;
+      description: string;
+      image: string | null;
+      bullets: string[];
+    }[];
+  };
+  featuresSection?: {
     label: string;
     heading: string;
     items: { icon: string; title: string; description: string }[];
@@ -30,12 +42,6 @@ interface PageContent {
     label: string;
     heading: string;
     items: { value: string; label: string }[];
-  };
-  cta: {
-    heading: string;
-    description: string;
-    buttonLabel: string;
-    buttonUrl: string;
   };
   problemSection: {
     label: string;
@@ -46,9 +52,16 @@ interface PageContent {
     videoImage: string | null;
     stats: { value: string; label: string }[];
   };
-  navigation: {
-    prevProduct: { label: string; url: string };
-    nextProduct: { label: string; url: string };
+  useCasesSection: {
+    label: string;
+    heading: string;
+    items: { icon: string | null; title: string; description: string }[];
+    cta: {
+      heading: string;
+      description: string;
+      buttonLabel: string;
+      buttonUrl: string;
+    };
   };
 }
 
@@ -152,12 +165,10 @@ export default async function CortexVoizPage() {
     <main>
       <Navbar navbar={site.navbar} />
       <ProductDetailHero hero={pageContent.hero} />
-      <ProductDetailStats
-        items={pageContent.statsSection.items}
-        prevProduct={pageContent.navigation.prevProduct}
-        nextProduct={pageContent.navigation.nextProduct}
-      />
+      <ProductDetailStats items={pageContent.statsSection.items} />
       <ProductDetailProblem problemSection={pageContent.problemSection} />
+      <ProductDetailCapabilities data={pageContent.capabilitiesSection} />
+      <ProductDetailUseCases data={pageContent.useCasesSection} />
       <Footer footer={site.footer} />
     </main>
   );

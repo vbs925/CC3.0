@@ -8,7 +8,7 @@
 .container {
   max-width: 1300px;
   margin: 0 auto;
-  padding: 0 64px;
+  padding: 45px 64px;
 }
 
 /* ── Left Text Block ── */
@@ -143,6 +143,7 @@
   .container {
     padding: 0 40px;
   }
+
   .heading {
     font-size: 32px;
   }
@@ -152,27 +153,34 @@
   .section {
     padding: 60px 0 0 0;
   }
+
   .container {
     padding: 0 24px;
   }
+
   .textBlock {
     max-width: 100%;
   }
+
   .heading {
     font-size: 26px;
   }
+
   .videoGradient {
     height: 320px;
     border-radius: 16px 16px 0 0;
   }
+
   .statsRow {
     flex-direction: column;
     border-radius: 0px;
   }
+
   .statItem:not(:last-child) {
     border-right: none;
     border-bottom: 1px solid #E0D9CC;
   }
+
   .statItem {
     padding: 28px 28px;
   }

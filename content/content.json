@@ -973,6 +973,23 @@
         "label": "Cortex Insights",
         "url": "/cortex-insights"
       }
+    },
+    "capabilitiesSection": {
+      "label": "Core Capabilities",
+      "heading": "What Cortex Voiz Does",
+      "items": [
+        {
+          "title": "Intelligent Inbound & Outbound Calling",
+          "description": "Cortex Voiz handles both incoming customer calls and outbound campaigns on the same agent. For inbound, the agent answers immediately, routes to humans if needed, and logs every interaction. For outbound, it dials numbers, handles objections, qualifies leads, and books meetings.",
+          "image": null,
+          "bullets": [
+            "Full call recording and transcription",
+            "Voicemail detection and tailored responses",
+            "Campaign dialling with retry logic",
+            "Works with your VOIP / SIP phone numbers"
+          ]
+        }
+      ]
     }
   }
 }
