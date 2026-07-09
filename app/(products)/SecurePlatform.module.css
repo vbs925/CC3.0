@@ -119,6 +119,9 @@
 }
 
 @media (max-width: 600px) {
+  .container {
+    padding: 0 24px;
+  }
   .featuresGrid {
     grid-template-columns: 1fr;
   }

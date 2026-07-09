@@ -78,8 +78,29 @@ export default function InteractiveDemo({ data }: InteractiveDemoProps) {
   };
 
   return (
-    <section className={styles.section} aria-label="Interactive Demo Section">
+    <section id="demo" className={styles.section} aria-label="Interactive Demo Section">
       <div className={styles.container}>
+        {/* ── Testimonial Block ── */}
+        <div className={styles.testimonialCard}>
+          <div className={styles.testimonialQuoteArea}>
+            <p className={styles.quote}>{testimonial.quote}</p>
+            <div className={styles.authorArea}>
+              <div className={styles.avatar}>SD</div>
+              <div className={styles.authorInfo}>
+                <p className={styles.authorName}>{testimonial.author}</p>
+                <p className={styles.authorRole}>{testimonial.role}</p>
+              </div>
+            </div>
+          </div>
+
+          <div className={styles.testimonialDivider}></div>
+
+          <div className={styles.testimonialStatArea}>
+            <h3 className={styles.statValue}>{testimonial.statValue}</h3>
+            <p className={styles.statLabel}>{testimonial.statLabel}</p>
+          </div>
+        </div>
+
         {/* ── Demo Block ── */}
         <div className={styles.demoBlock}>
           {/* Left Text */}
@@ -168,27 +189,6 @@ export default function InteractiveDemo({ data }: InteractiveDemoProps) {
               {status === "loading" ? "Submitting..." : status === "success" ? "Request Sent!" : demo.form.buttonLabel}
             </button>
             {errorMessage && <p style={{ color: "red", fontSize: "12px", marginTop: "8px" }}>{errorMessage}</p>}
-          </div>
-        </div>
-
-        {/* ── Testimonial Block ── */}
-        <div className={styles.testimonialCard}>
-          <div className={styles.testimonialQuoteArea}>
-            <p className={styles.quote}>{testimonial.quote}</p>
-            <div className={styles.authorArea}>
-              <div className={styles.avatar}>SD</div>
-              <div className={styles.authorInfo}>
-                <p className={styles.authorName}>{testimonial.author}</p>
-                <p className={styles.authorRole}>{testimonial.role}</p>
-              </div>
-            </div>
-          </div>
-
-          <div className={styles.testimonialDivider}></div>
-
-          <div className={styles.testimonialStatArea}>
-            <h3 className={styles.statValue}>{testimonial.statValue}</h3>
-            <p className={styles.statLabel}>{testimonial.statLabel}</p>
           </div>
         </div>
       </div>

@@ -1,5 +1,6 @@
 "use client";
 
+import { useState } from "react";
 import styles from "./Navbar.module.css";
 
 interface NavLink {
@@ -18,6 +19,8 @@ interface NavbarProps {
 }
 
 export default function Navbar({ navbar }: NavbarProps) {
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
     <header className={styles.header}>
       <nav className={styles.nav}>
@@ -31,9 +34,21 @@ export default function Navbar({ navbar }: NavbarProps) {
           />
         </a>
 
+        {/* Hamburger Menu Toggle */}
+        <button 
+          className={styles.hamburger} 
+          onClick={() => setIsOpen(!isOpen)}
+          aria-label="Toggle menu"
+        >
+          <span className={`${styles.bar} ${isOpen ? styles.barOpen : ""}`}></span>
+          <span className={`${styles.bar} ${isOpen ? styles.barOpen : ""}`}></span>
+          <span className={`${styles.bar} ${isOpen ? styles.barOpen : ""}`}></span>
+        </button>
+
         {/* Nav Links */}
-        <ul className={styles.navLinks} role="list">
-          {navbar.links.map((link) => (
+        <div className={`${styles.navContent} ${isOpen ? styles.navContentOpen : ""}`}>
+          <ul className={styles.navLinks} role="list">
+            {navbar.links.map((link) => (
             <li key={link.label}>
               <a
                 href={link.url}
@@ -44,12 +59,13 @@ export default function Navbar({ navbar }: NavbarProps) {
               </a>
             </li>
           ))}
-        </ul>
+          </ul>
 
-        {/* CTA */}
-        <a href={navbar.ctaUrl} className={styles.ctaBtn} id="nav-cta-btn">
-          {navbar.ctaLabel}
-        </a>
+          {/* CTA */}
+          <a href={navbar.ctaUrl} className={styles.ctaBtn} id="nav-cta-btn">
+            {navbar.ctaLabel}
+          </a>
+        </div>
       </nav>
     </header>
   );

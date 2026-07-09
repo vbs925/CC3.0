@@ -199,3 +199,15 @@
     right: auto;
   }
 }
+
+@media (max-width: 600px) {
+  .sectionHeading {
+    font-size: 32px;
+  }
+  .cardTitle {
+    font-size: 22px;
+  }
+  .cardVisual {
+    height: 200px;
+  }
+}

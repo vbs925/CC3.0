@@ -23,18 +23,6 @@ export default function ProductDetailStats({ items }: StatsBarProps) {
           ))}
         </div>
       </section>
-
-      {/* ── Product Navigation ── */}
-      <nav className={styles.productNav} aria-label="Product Navigation">
-        <div className={styles.productNavInner}>
-          <a href="/products" className={styles.productNavPrev}>
-            ← All Products
-          </a>
-          <a href="/cortex-insights" className={styles.productNavNext}>
-            Cortex Insights →
-          </a>
-        </div>
-      </nav>
     </>
   );
 }

@@ -185,3 +185,12 @@
     padding: 28px 28px;
   }
 }
+
+@media (max-width: 600px) {
+  .videoGradient {
+    height: 240px;
+  }
+  .statValue {
+    font-size: 28px;
+  }
+}

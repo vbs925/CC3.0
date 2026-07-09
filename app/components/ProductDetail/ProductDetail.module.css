@@ -374,3 +374,27 @@
     opacity: 0.3;
   }
 }
+
+@media (max-width: 600px) {
+  .heroHeading {
+    font-size: 32px;
+  }
+  
+  .statsGrid {
+    grid-template-columns: 1fr;
+  }
+  
+  .statCard {
+    border-right: none;
+    border-bottom: 1.5px solid rgba(255, 255, 255, 0.1);
+  }
+  
+  .statCard:last-child {
+    border-bottom: none;
+  }
+  
+  .productNavInner {
+    flex-direction: column;
+    gap: 16px;
+  }
+}

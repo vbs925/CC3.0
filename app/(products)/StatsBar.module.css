@@ -52,9 +52,9 @@
 @media (max-width: 768px) {
   .inner {
     padding: 0 24px;
-    flex-wrap: wrap;
-    gap: 24px;
-    justify-content: flex-start;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px 16px;
   }
 
   .statItem:not(:last-child) {
@@ -64,6 +64,17 @@
   }
 
   .value {
-    font-size: 22px;
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 600px) {
+  .inner {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  
+  .statItem {
+    align-items: center;
   }
 }

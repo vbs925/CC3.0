@@ -198,6 +198,7 @@
 @media (max-width: 900px) {
   .topSection {
     flex-direction: column;
+    gap: 40px;
   }
 
   .bottomBar {
@@ -208,5 +209,33 @@
   .bottomLinks {
     flex-wrap: wrap;
     gap: 16px;
+  }
+}
+
+@media (max-width: 600px) {
+  .brandTitle {
+    font-size: 20px;
+  }
+  
+  .linksCol {
+    min-width: 100%;
+  }
+  
+  .officesCol {
+    min-width: 100%;
+  }
+
+  .socialList {
+    flex-wrap: wrap;
+  }
+
+  .bottomBar {
+    align-items: center;
+    text-align: center;
+    gap: 32px;
+  }
+
+  .bottomLinks {
+    justify-content: center;
   }
 }

@@ -1,0 +1,118 @@
+.exploreSection {
+  padding: 40px 5%;
+  background: #ffffff;
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.heading {
+  font-family: "Space Grotesk", var(--font-space-grotesk), sans-serif;
+  font-size: 40px;
+  font-weight: 600;
+  color: #111111;
+  margin-bottom: 48px;
+}
+
+.cardsGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+}
+
+.card {
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.3); /* Thin blackish border */
+  border-radius: 12px;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 220px; /* Reduced height */
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.05);
+}
+
+.cardContent {
+  margin-bottom: 32px;
+}
+
+.tag {
+  font-family: "JetBrains Mono", var(--font-jetbrains-mono), monospace;
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: #4f46e5; /* Blue */
+  display: block;
+  margin-bottom: 16px;
+}
+
+.cardTitle {
+  font-family: "Space Grotesk", var(--font-space-grotesk), sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  color: #111111;
+  margin-bottom: 12px;
+}
+
+.cardDescription {
+  font-family: "Inter", var(--font-inter), sans-serif;
+  font-size: 15px;
+  line-height: 1.6;
+  color: #555555;
+  margin: 0;
+}
+
+.cardFooter {
+  margin-top: auto;
+}
+
+.readMoreBtn {
+  font-family: "Inter", var(--font-inter), sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  color: #4f46e5; /* Blue */
+  border: 1px solid #4f46e5; /* Blue border */
+  border-radius: 20px;
+  padding: 8px 16px;
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.readMoreBtn:hover {
+  background: #4f46e5; /* Blue */
+  color: #ffffff;
+}
+
+/* ── Responsive ── */
+@media (max-width: 900px) {
+  .cardsGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .exploreSection {
+    padding: 32px 5%;
+  }
+  
+  .heading {
+    font-size: 32px;
+    text-align: center;
+  }
+  
+  .cardsGrid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+}

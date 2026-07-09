@@ -903,11 +903,11 @@
   "cortexVoiz": {
     "hero": {
       "categoryLabel": "Voice & CX",
-      "heading": "Cortex Voiz: The AI Phone Assistant",
-      "description": "Production-quality AI voice agents for inbound and outbound calls. Handle 24/7 customer inquiries, run sales outreach, and reduce support costs 40% \u2014 without building telephony infrastructure from scratch.",
+      "heading": "Cortex Insight: Conversational Market Research At Global Scale",
+      "description": "Cortex Insight automates market research with AI. Conduct interviews, synthesize insights, and deploy inside your stack in days.",
       "primaryButton": {
         "label": "View Our Products",
-        "url": "/products"
+        "url": "/"
       },
       "secondaryButton": {
         "label": "Schedule a Demo",
@@ -967,7 +967,7 @@
     "navigation": {
       "prevProduct": {
         "label": "All Products",
-        "url": "/products"
+        "url": "/"
       },
       "nextProduct": {
         "label": "Cortex Insights",
@@ -1065,6 +1065,12 @@
         "statLabel": "of inbound appointments booked fully autonomously, day one."
       }
     },
+    "productNavigation": {
+      "prevLabel": "\u2190 All Products",
+      "prevUrl": "/",
+      "nextLabel": "Cortex Insights \u2192",
+      "nextUrl": "/cortex-insights"
+    },
     "platformSection": {
       "label": "Under the Hood",
       "heading": "Built For Real-Time Conversation At Scale",
@@ -1102,6 +1108,263 @@
         "Webhooks",
         "RAG",
         "SSO / SAML"
+      ]
+    },
+    "exploreSuiteSection": {
+      "heading": "Explore The Rest Of The Suite",
+      "cards": [
+        {
+          "tag": "Support \u00b7 Multi-Tenant",
+          "title": "Cortex Desk",
+          "description": "A flagship multi-tenant help desk built on Frappe, with organisation-level tenancy, project-scoped access, SLA...",
+          "url": "#"
+        },
+        {
+          "tag": "Internal \u00b7 CRM Hub",
+          "title": "Cortex Workbench",
+          "description": "One place for the whole team to run accounts, deals, and conversations. Workbench pulls contacts, pipeline,...",
+          "url": "#"
+        },
+        {
+          "tag": "ERP \u00b7 Hospitals",
+          "title": "Cortex Care",
+          "description": "A unified, role-aware system for UK care operators: clinical safety, regulatory readiness, family trust, and...",
+          "url": "#"
+        }
+      ]
+    }
+  },
+  "cortexInsight": {
+    "hero": {
+      "categoryLabel": "Voice & CX",
+      "heading": "Cortex Insight: Conversational Market Research At Global Scale",
+      "description": "Cortex Insight automates market research with AI. Conduct interviews, synthesize insights, and deploy inside your stack in days.",
+      "primaryButton": {
+        "label": "View Our Products",
+        "url": "/"
+      },
+      "secondaryButton": {
+        "label": "Schedule a Demo",
+        "url": "#demo"
+      }
+    },
+    "statsSection": {
+      "label": "By the Numbers",
+      "heading": "Built for Enterprise Scale",
+      "items": [
+        {
+          "value": "100%",
+          "label": "of inbound calls answered instantly"
+        },
+        {
+          "value": "40%",
+          "label": "reduction in support costs"
+        },
+        {
+          "value": "< 30s",
+          "label": "average call response time"
+        },
+        {
+          "value": "24/7",
+          "label": "uptime with no staffing overhead"
+        }
+      ]
+    },
+    "problemSection": {
+      "label": "The Problem",
+      "heading": "Why Cortex Voiz Exists?",
+      "subtitle": "Manual phone handling is costly, doesn't scale, and ties up your best people.",
+      "body": "Every incoming call needs a human. Every outbound campaign requires a team. With Cortex Voiz, create intelligent voice agents that handle both \u2014 inbound support, outbound sales, appointment scheduling, and more \u2014 without building telephony infrastructure from scratch.",
+      "demoCaption": "Watch the 2-min demo \u2014 no form needed",
+      "videoImage": null,
+      "stats": [
+        {
+          "value": "98.6%",
+          "label": "Call Resolution Without A Human"
+        },
+        {
+          "value": "-40%",
+          "label": "Cost Per Handled Call"
+        },
+        {
+          "value": "3 DAYS",
+          "label": "To First Live Agent"
+        }
+      ]
+    },
+    "cta": {
+      "heading": "Ready to automate your calls?",
+      "description": "Book a 15-minute live call and hear Cortex Voiz run on your own scenario.",
+      "buttonLabel": "Book a live call",
+      "buttonUrl": "#book"
+    },
+    "navigation": {
+      "prevProduct": {
+        "label": "All Products",
+        "url": "/"
+      },
+      "nextProduct": {
+        "label": "Cortex Insights",
+        "url": "/cortex-insights"
+      }
+    },
+    "capabilitiesSection": {
+      "label": "Core Capabilities",
+      "heading": "What Cortex Voiz Does",
+      "items": [
+        {
+          "title": "Intelligent Inbound & Outbound Calling",
+          "description": "Cortex Voiz handles both incoming customer calls and outbound campaigns on the same agent. For inbound, the agent answers immediately, routes to humans if needed, and logs every interaction. For outbound, it dials numbers, handles objections, qualifies leads, and books meetings.",
+          "image": null,
+          "bullets": [
+            "Full call recording and transcription",
+            "Voicemail detection and tailored responses",
+            "Campaign dialling with retry logic",
+            "Works with your VOIP / SIP phone numbers"
+          ]
+        }
+      ]
+    },
+    "useCasesSection": {
+      "label": "Who it is for",
+      "heading": "Different Teams, Same Platform",
+      "items": [
+        {
+          "icon": null,
+          "title": "Healthcare",
+          "description": "Appointment lines ring constantly. Voiz answers, checks availability, books, and confirms instantly."
+        },
+        {
+          "icon": null,
+          "title": "Financial Services",
+          "description": "Support volume spikes unpredictably. AI takes routine calls; humans take the complex ones."
+        },
+        {
+          "icon": null,
+          "title": "Contact Centres",
+          "description": "Use AI for first-pass handling and reserve people for hard cases, cutting handle time."
+        },
+        {
+          "icon": null,
+          "title": "Retail & E-commerce",
+          "description": "Order status and returns handled automatically, with feedback captured on the call."
+        },
+        {
+          "icon": null,
+          "title": "Real Estate",
+          "description": "Outbound follow-up qualifies leads, schedules showings, and answers property questions 24/7."
+        },
+        {
+          "icon": null,
+          "title": "Education",
+          "description": "Admissions lines answered at scale \u2014 questions handled, materials sent, tours booked."
+        }
+      ],
+      "cta": {
+        "heading": "What to use Cortex Voiz in a different sector?",
+        "description": "Contact us to get a personalised demo of Cortex Voiz for your specific domain.",
+        "buttonLabel": "Schedule a Demo",
+        "buttonUrl": "#demo"
+      }
+    },
+    "interactiveDemo": {
+      "demo": {
+        "label": "Test It Yourself",
+        "heading": "Talk To Cortex Voiz & Test Your Own Scenario",
+        "description": "Pick a use case and our AI agent will call you and run it live, then answer anything you want to ask. The fastest way to judge it is to hear it.",
+        "note": "We'll call within ~30 seconds. The call takes about 2 minutes.",
+        "useCases": [
+          "Inbound Booking",
+          "Lead Qualification",
+          "Customer Support",
+          "Outbound Survey"
+        ],
+        "form": {
+          "nameLabel": "Name",
+          "namePlaceholder": "Enter your full name",
+          "phoneLabel": "Phone Number",
+          "phonePlaceholder": "11111-11111",
+          "emailLabel": "Work email",
+          "emailPlaceholder": "name@email.com",
+          "useCaseLabel": "What should the agent demo?",
+          "agreementText": "I agree to receive a one-time automated call from CortexCraft for this demo, and to the privacy policy.",
+          "buttonLabel": "Call me now"
+        }
+      },
+      "testimonial": {
+        "quote": "\"Cortex Voiz answered 30,000 patient calls in the first month and booked 41% of them without a single human picking up.\"",
+        "author": "Surya",
+        "role": "Head of Operations, SD",
+        "statValue": "41%",
+        "statLabel": "of inbound appointments booked fully autonomously, day one."
+      }
+    },
+    "productNavigation": {
+      "prevLabel": "\u2190 All Products",
+      "prevUrl": "/",
+      "nextLabel": "Cortex Insights \u2192",
+      "nextUrl": "/cortex-insights"
+    },
+    "platformSection": {
+      "label": "Under the Hood",
+      "heading": "Built For Real-Time Conversation At Scale",
+      "description": "A streaming FastAPI pipeline moves audio to real-time speech and reasoning models, so turn-taking feels human, not robotic.",
+      "features": [
+        {
+          "title": "Latency",
+          "description": "Sub-second turn-taking over a streaming WebSocket pipeline."
+        },
+        {
+          "title": "Orchestration",
+          "description": "FastAPI layer streaming audio to real-time speech and reasoning models."
+        },
+        {
+          "title": "Languages",
+          "description": "Multi-language with native accent recognition and dialect handling."
+        },
+        {
+          "title": "Scale",
+          "description": "Hundreds of simultaneous calls without degradation."
+        },
+        {
+          "title": "Security",
+          "description": "Encrypted in transit and at rest, with full call audit logs."
+        },
+        {
+          "title": "Data Residency",
+          "description": "Choose where call data and recordings are stored."
+        }
+      ],
+      "tags": [
+        "WebRTC",
+        "SIP / VOIP",
+        "REST API",
+        "Webhooks",
+        "RAG",
+        "SSO / SAML"
+      ]
+    },
+    "exploreSuiteSection": {
+      "heading": "Explore The Rest Of The Suite",
+      "cards": [
+        {
+          "tag": "Support \u00b7 Multi-Tenant",
+          "title": "Cortex Desk",
+          "description": "A flagship multi-tenant help desk built on Frappe, with organisation-level tenancy, project-scoped access, SLA...",
+          "url": "#"
+        },
+        {
+          "tag": "Internal \u00b7 CRM Hub",
+          "title": "Cortex Workbench",
+          "description": "One place for the whole team to run accounts, deals, and conversations. Workbench pulls contacts, pipeline,...",
+          "url": "#"
+        },
+        {
+          "tag": "ERP \u00b7 Hospitals",
+          "title": "Cortex Care",
+          "description": "A unified, role-aware system for UK care operators: clinical safety, regulatory readiness, family trust, and...",
+          "url": "#"
+        }
       ]
     }
   }

@@ -1,5 +1,5 @@
 import styles from "./ProductDetail.module.css";
-import NeuralAnimation from "../(products)/NeuralAnimation";
+import NeuralAnimation from "../../(products)/NeuralAnimation";
 
 interface HeroButton {
   label: string;

@@ -83,10 +83,24 @@
 
 /* ── Left Text Block ── */
 .textBlock {
-  max-width: 480px;
+  max-width: 690px;
   display: flex;
   flex-direction: column;
-  gap: 14px;
+  gap: 22px;
+}
+
+@media (max-width: 600px) {
+  .productTitle {
+    font-size: 28px;
+  }
+  
+  .featuresGrid {
+    grid-template-columns: 1fr;
+  }
+  
+  .textBlock {
+    max-width: 100%;
+  }
 }
 
 .categoryLabel {

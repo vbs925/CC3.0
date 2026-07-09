@@ -181,3 +181,24 @@
     overflow: hidden;
   }
 }
+
+@media (max-width: 600px) {
+  .heading {
+    font-size: 32px;
+  }
+  
+  .actions {
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .btnPrimary, .btnSecondary {
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+  }
+  
+  .graphWrapper {
+    height: 240px;
+  }
+}

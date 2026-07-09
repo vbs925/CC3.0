@@ -239,11 +239,12 @@
 /* ── Testimonial Block ── */
 .testimonialCard {
   background: #ffffff;
-  border: 1.5px solid rgba(0, 0, 0, 0.1);
+  border: 1px solid #F8AB05; /* Thin yellow border */
   border-radius: 12px;
   display: flex;
-  padding: 48px;
+  padding: 32px 48px; /* Reduce top/bottom padding to make it smaller in height */
   align-items: center;
+  margin-bottom: 64px; /* Gap between card and the form below */
 }
 
 .testimonialQuoteArea {
@@ -348,5 +349,23 @@
   }
   .authorArea {
     justify-content: center;
+  }
+}
+
+@media (max-width: 600px) {
+  .heading {
+    font-size: 32px;
+  }
+  
+  .formGrid {
+    grid-template-columns: 1fr;
+  }
+  
+  .testimonialCard {
+    padding: 24px 16px;
+  }
+  
+  .testimonialQuote {
+    font-size: 20px;
   }
 }
