@@ -6,17 +6,17 @@
 }
 
 .container {
-  max-width: 1300px;
+  max-width: 1400px;
   margin: 0 auto;
-  padding: 45px 64px;
+  padding: 4px 64px;
 }
 
 /* ── Left Text Block ── */
 .textBlock {
-  max-width: 500px;
+  max-width: 693px;
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 18px;
   margin-bottom: 44px;
 }
 
