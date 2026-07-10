@@ -1,4 +1,4 @@
-import styles from "./ProductDetailCapabilities.module.css";
+import defaultStyles from "./ProductDetailCapabilities.module.css";
 import Image from "next/image";
 
 interface CapabilityItem {
@@ -14,9 +14,11 @@ interface CapabilitiesProps {
     heading: string;
     items: CapabilityItem[];
   };
+  customStyles?: any;
 }
 
-export default function ProductDetailCapabilities({ data }: CapabilitiesProps) {
+export default function ProductDetailCapabilities({ data, customStyles }: CapabilitiesProps) {
+  const styles = customStyles || defaultStyles;
   if (!data || !data.items || data.items.length === 0) return null;
 
   return (

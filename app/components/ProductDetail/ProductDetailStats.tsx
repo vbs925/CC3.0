@@ -1,4 +1,4 @@
-import styles from "./ProductDetail.module.css";
+import defaultStyles from "./ProductDetail.module.css";
 
 interface Stat {
   value: string;
@@ -7,9 +7,11 @@ interface Stat {
 
 interface StatsBarProps {
   items: Stat[];
+  customStyles?: any;
 }
 
-export default function ProductDetailStats({ items }: StatsBarProps) {
+export default function ProductDetailStats({ items, customStyles }: StatsBarProps) {
+  const styles = customStyles || defaultStyles;
   return (
     <>
       {/* ── Stats Bar ── */}

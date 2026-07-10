@@ -1,4 +1,4 @@
-import styles from "./ProductDetailProblem.module.css";
+import defaultStyles from "./ProductDetailProblem.module.css";
 
 interface Stat {
   value: string;
@@ -17,9 +17,11 @@ interface ProblemSectionData {
 
 interface ProblemSectionProps {
   problemSection: ProblemSectionData;
+  customStyles?: any;
 }
 
-export default function ProductDetailProblem({ problemSection }: ProblemSectionProps) {
+export default function ProductDetailProblem({ problemSection, customStyles }: ProblemSectionProps) {
+  const styles = customStyles || defaultStyles;
   return (
     <section className={styles.section} aria-label={problemSection.heading}>
       <div className={styles.container}>

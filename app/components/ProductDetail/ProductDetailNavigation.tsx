@@ -1,4 +1,4 @@
-import styles from "./ProductDetail.module.css";
+import defaultStyles from "./ProductDetail.module.css";
 
 interface ProductNavProps {
   data: {
@@ -7,9 +7,11 @@ interface ProductNavProps {
     nextLabel: string;
     nextUrl: string;
   };
+  customStyles?: any;
 }
 
-export default function ProductDetailNavigation({ data }: ProductNavProps) {
+export default function ProductDetailNavigation({ data, customStyles }: ProductNavProps) {
+  const styles = customStyles || defaultStyles;
   return (
     <nav className={styles.productNav} aria-label="Product Navigation">
       <div className={styles.productNavInner}>

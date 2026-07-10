@@ -19,8 +19,10 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  align-items: flex-start; /* explicitly left align items */
-  text-align: left; /* explicitly left align text */
+  align-items: flex-start;
+  /* explicitly left align items */
+  text-align: left;
+  /* explicitly left align text */
   /* align text to top portion */
   position: relative;
   z-index: 2;
@@ -382,20 +384,20 @@
   .heroHeading {
     font-size: 32px;
   }
-  
+
   .statsGrid {
     grid-template-columns: 1fr;
   }
-  
+
   .statCard {
     border-right: none;
     border-bottom: 1.5px solid rgba(255, 255, 255, 0.1);
   }
-  
+
   .statCard:last-child {
     border-bottom: none;
   }
-  
+
   .productNavInner {
     flex-direction: column;
     gap: 16px;

@@ -1,4 +1,4 @@
-import styles from "../components/ProductDetail/ProductDetail.module.css";
+import pageStyles from "./Insight.module.css";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import ProductDetailHero from "../components/ProductDetail/ProductDetailHero";
@@ -194,15 +194,15 @@ export default async function CortexInsightPage() {
   return (
     <main>
       <Navbar navbar={site.navbar} />
-      <ProductDetailHero hero={pageContent.hero} />
-      <ProductDetailStats items={pageContent.statsSection.items} />
-      <ProductDetailNavigation data={pageContent.productNavigation} />
-      <ProductDetailProblem problemSection={pageContent.problemSection} />
-      <ProductDetailCapabilities data={pageContent.capabilitiesSection} />
-      <ProductDetailUseCases data={pageContent.useCasesSection} />
+      <ProductDetailHero hero={pageContent.hero} customStyles={pageStyles} />
+      <ProductDetailStats items={pageContent.statsSection.items} customStyles={pageStyles} />
+      <ProductDetailNavigation data={pageContent.productNavigation} customStyles={pageStyles} />
+      <ProductDetailProblem problemSection={pageContent.problemSection} customStyles={pageStyles} />
+      <ProductDetailCapabilities data={pageContent.capabilitiesSection} customStyles={pageStyles} />
+      <ProductDetailUseCases data={pageContent.useCasesSection} customStyles={pageStyles} />
       <SecurePlatform data={pageContent.platformSection} />
       <InteractiveDemo data={pageContent.interactiveDemo} />
-      {pageContent.exploreSuiteSection && <ProductDetailExplore data={pageContent.exploreSuiteSection} />}
+      {pageContent.exploreSuiteSection && <ProductDetailExplore data={pageContent.exploreSuiteSection} customStyles={pageStyles} />}
       <Footer footer={site.footer} />
     </main>
   );

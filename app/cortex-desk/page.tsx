@@ -1,4 +1,4 @@
-import pageStyles from "./Voiz.module.css";
+import pageStyles from "./Desk.module.css";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import ProductDetailHero from "../components/ProductDetail/ProductDetailHero";
@@ -129,47 +129,23 @@ interface NavbarContent {
 // ── Metadata ───────────────────────────────────────────────────────────────
 
 export const metadata: Metadata = {
-  title: "Cortex Voiz: The AI Phone Assistant — CortexCraft.AI",
+  title: "Cortex Desk: The Intelligent Workspace — CortexCraft.AI",
   description:
-    "Production-quality AI voice agents for inbound and outbound calls. Handle 24/7 customer inquiries, run sales outreach, and reduce support costs 40%.",
+    "Cortex Desk integrates your existing software stack into a single interface with built-in AI assistance for faster task execution and collaboration.",
 };
 
 // ── Data Fetchers ──────────────────────────────────────────────────────────
 
 async function getPageContent(): Promise<PageContent | null> {
   try {
-    const res = await fetch("http://localhost:8000/api/cms/product/cortex-voiz/", {
+    const res = await fetch("http://localhost:8000/api/cms/product/cortex-desk/", {
       next: { revalidate: 0 },
     });
     if (!res.ok) throw new Error(`API returned ${res.status}`);
     return await res.json();
   } catch (err) {
-    console.warn("[CMS] Cortex Voiz API unavailable:", err);
+    console.warn("[CMS] Cortex Desk API unavailable:", err);
     return null;
-  }
-}
-
-async function getNavbarContent(): Promise<NavbarContent> {
-  try {
-    const res = await fetch("http://localhost:8000/api/cms/content/", {
-      next: { revalidate: 0 },
-    });
-    if (!res.ok) throw new Error(`API returned ${res.status}`);
-    const data = await res.json();
-    return data.navbar;
-  } catch {
-    return {
-      logo: null,
-      ctaLabel: "Get in touch",
-      ctaUrl: "#contact",
-      links: [
-        { label: "Services", url: "#", isActive: false },
-        { label: "Products", url: "/", isActive: true },
-        { label: "Works", url: "#", isActive: false },
-        { label: "About", url: "#", isActive: false },
-        { label: "Blogs", url: "#", isActive: false },
-      ],
-    };
   }
 }
 
@@ -203,11 +179,11 @@ async function getSiteContent(): Promise<{ navbar: NavbarContent; footer: any }>
 // ── Fallback content (shown if API is unavailable) ─────────────────────────
 
 import fallbackData from "../../content/content.json";
-const FALLBACK: PageContent = fallbackData.cortexVoiz;
+const FALLBACK: PageContent = fallbackData.cortexDesk;
 
 // ── Page ──────────────────────────────────────────────────────────────────
 
-export default async function CortexVoizPage() {
+export default async function CortexDeskPage() {
   const [content, site] = await Promise.all([
     getPageContent(),
     getSiteContent(),

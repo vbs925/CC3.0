@@ -1,4 +1,4 @@
-import styles from "./ProductDetail.module.css";
+import defaultStyles from "./ProductDetail.module.css";
 import NeuralAnimation from "../../(products)/NeuralAnimation";
 
 interface HeroButton {
@@ -14,9 +14,11 @@ interface HeroProps {
     primaryButton: HeroButton;
     secondaryButton: HeroButton;
   };
+  customStyles?: any;
 }
 
-export default function ProductDetailHero({ hero }: HeroProps) {
+export default function ProductDetailHero({ hero, customStyles }: HeroProps) {
+  const styles = customStyles || defaultStyles;
   return (
     <section className={styles.hero} aria-label="Cortex Voiz Hero Section">
       {/* Neural network — top-right corner (partially off-screen) */}

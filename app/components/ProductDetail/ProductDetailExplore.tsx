@@ -1,5 +1,5 @@
 import Link from "next/link";
-import styles from "./ProductDetailExplore.module.css";
+import defaultStyles from "./ProductDetailExplore.module.css";
 
 interface ExploreSuiteCard {
   tag: string;
@@ -13,9 +13,11 @@ interface ExploreSuiteProps {
     heading: string;
     cards: ExploreSuiteCard[];
   };
+  customStyles?: any;
 }
 
-export default function ProductDetailExplore({ data }: ExploreSuiteProps) {
+export default function ProductDetailExplore({ data, customStyles }: ExploreSuiteProps) {
+  const styles = customStyles || defaultStyles;
   if (!data || !data.cards || data.cards.length === 0) return null;
 
   return (

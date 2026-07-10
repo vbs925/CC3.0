@@ -1,5 +1,5 @@
 import Image from "next/image";
-import styles from "./ProductDetailUseCases.module.css";
+import defaultStyles from "./ProductDetailUseCases.module.css";
 
 interface UseCaseItem {
   icon: string | null;
@@ -21,9 +21,11 @@ interface UseCasesProps {
     items: UseCaseItem[];
     cta: UseCasesCta;
   };
+  customStyles?: any;
 }
 
-export default function ProductDetailUseCases({ data }: UseCasesProps) {
+export default function ProductDetailUseCases({ data, customStyles }: UseCasesProps) {
+  const styles = customStyles || defaultStyles;
   if (!data) return null;
 
   return (
